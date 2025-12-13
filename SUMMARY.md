@@ -1,6 +1,6 @@
 # Table of Contents
 
-* [Home (Rejean McCormick)](README.md)
+* [Home (Réjean McCormick)](README.md)
 * [Konnaxion](Konnaxion/Home.md)
   * [CertifiKation](Konnaxion/CertifiKation.md)
   * [EkoH](Konnaxion/EkoH.md)
