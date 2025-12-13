@@ -37,7 +37,7 @@ To make Orgo and Konnaxion truly independent, I needed a "language deconstructor
 To make Konnaxion available to all, I needed a way to generate multilingual articles from abstract data. Since no existing solution was ready, I initiated building this architect.
 * **Role:** Structural design and relationship mapping for the wiki ecosystem.
 * 🏛️ **[Wikimedia Tool Page](https://meta.wikimedia.org/w/index.php?title=Abstract_Wikipedia/Tools/abstract-wiki-architect)**
-* 👉 [Read the Docs](abstract-wiki-architect/Home.md)
+* 👉 [Access Architect Technical Wiki](abstract-wiki-architect/Home.md)
 
 ---
 
@@ -49,13 +49,13 @@ To make Konnaxion available to all, I needed a way to generate multilingual arti
 * **Mission:** Connect everyone. Stitches together existing OER catalogs and civic tools rather than rebuilding them.
 * **Modules:** KonnectED (Education), keenKonnect (R&D), Ethikos (Governance), Kreative (Culture).
 * 🌐 **[Official Site (konnaxion.com)](https://konnaxion.com)**
-* 🧠 **[Knowledge Hub (kingklown.wiki)](https://kingklown.wiki/)**
+* 🧠 **[Presentation of Konnaxion (formerly "Knowledge Hub") (kingklown.wiki)](https://kingklown.wiki/)**
 * 👉 [Access Konnaxion Technical Wiki](Konnaxion/Home.md)
 
 ### 2. Orgo (The Hermetic Bubble)
 * **Mission:** Organize and Go. A multi-tenant nervous system for organizations (gov, business, schools).
 * **Independence:** Designed to operate in a "bubble" (closed network). It uses SenTient to process information locally, ensuring total privacy and speed without data leaks.
-* 📊 **[Overview Presentation (Gamma)](https://administrative-efficienc-0u6vhrh.gamma.site/)**
+* 📊 **[Presentation of Orgo](https://administrative-efficienc-0u6vhrh.gamma.site/)**
 * 👉 [Access Orgo Technical Wiki](Orgo/Home.md)
 
 ---
@@ -67,7 +67,7 @@ Specific architectural components that handle intelligence and navigation.
 ### 🧭 Ariane (Commercial)
 **Status:** *For Sale / Commercial Licensing*
 The "Thread" and navigation system. Ariane handles graph models and ontology vocabularies (Atlas) to guide users through complex data structures.
-* 👉 [Read the Docs](Ariane/Home.md)
+* 👉 [Access Ariane Technical Wiki](Ariane/Home.md)
 
 ### 🐝 SwarmCraft
 **Status:** *Research / Open Source*
@@ -77,7 +77,7 @@ Managing swarm intelligence and prompt engineering pipelines. Focuses on determi
 ### 👻 Ame-Artificielle (Artificial Soul)
 **Status:** *Research / Open Source*
 Concepts of AI alignment and meta-cognition. Defines ethics, governance, and functional specifications for synthetic souls.
-* 👉 [Read the Docs](Ame-Artificielle/Home.md)
+* 👉 [Access Âme Artificielle Technical Wiki](Ame-Artificielle/Home.md)
 
 ---
 
@@ -93,7 +93,6 @@ To make these systemic ideas legible and engaging, I utilize a narrative engine 
 
 ## 🌐 Hubs & Connectors
 
-* **Central Wiki:** [kingklown.wiki](https://kingklown.wiki/)
 * **Source Code:** [GitHub/Rejean-McCormick](https://github.com/Rejean-McCormick)
 
 ### Social Channels
