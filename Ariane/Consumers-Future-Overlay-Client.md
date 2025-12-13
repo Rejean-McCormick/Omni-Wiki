@@ -103,7 +103,7 @@ The only requirement is that any consumer—overlay or otherwise—must be able 
 
 ## Related Pages
 
-- [[Consumers]] – overview of consumer types, including overlay as one example.  
-- [[Consumers/AI-Agent-Integration]] – how agents use Atlas for planning and guidance.  
-- [[Atlas]] – data and semantics that overlay clients would query.  
-- [[Theseus]] – how the underlying UI graphs are discovered in the first place.
+- [Consumers](Consumers.md) – overview of consumer types, including overlay as one example.  
+- [Consumers/AI-Agent-Integration](Consumers-AI-Agent-Integration.md) – how agents use Atlas for planning and guidance.  
+- [Atlas](Atlas.md) – data and semantics that overlay clients would query.  
+- [Theseus](Theseus.md) – how the underlying UI graphs are discovered in the first place.

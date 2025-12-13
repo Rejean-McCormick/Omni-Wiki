@@ -3,7 +3,7 @@
 > **Architectural Lineage (Credits):**  
 > SwarmCraft is an **architectural fork and deep rewrite** of the multi-agent swarm engine created by **[Mojomast](https://github.com/mojomast)** in **[mojomast/swarmussy](https://github.com/mojomast/swarmussy)**.  
 > SwarmCraft’s deterministic “Architect-style” layering is also **derived from the meta-structure of Abstract Wiki Architect (AWA)**.  
-> Full details: **[[Credits & Lineage]]**
+> Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
 ## **POWERED BY GROK** ⚡️
 
@@ -18,7 +18,7 @@
 File location:
 - `data/story_bible/outline.json`
 
-Story scaffold overview: **[[Story Scaffold (Templates-Outline-Parts)]]**
+Story scaffold overview: **[Story Scaffold](Story-Scaffold-Templates-Outline-Parts.md)**
 
 ---
 
@@ -114,7 +114,7 @@ Must match an existing template file in:
 
 * `templates/<template_id>.json`
 
-Template schema: **[[Schema Templates]]**
+Template schema: **[Schema Templates](Schema-Templates.md)**
 
 ### 3.3 `settings.parts_per_chapter` (recommended)
 
@@ -165,7 +165,7 @@ The orchestrator uses the contract to:
 
 Related:
 
-* **[[Orchestration Slice-by-Slice Prompt Hydration]]**
+* **[Orchestration Slice-by-Slice Prompt Hydration](Orchestration-Slice-By-Slice-Prompt-Hydration.md)**
 
 ---
 
@@ -199,7 +199,7 @@ Matrix mapping:
 
 * locked parts should appear as `LOCKED` (or `locked=true`) in Matrix.
 
-Matrix: **[[Central Matrix (Runtime State)]]**
+Matrix: **[Central Matrix](Central-Matrix-Runtime-State.md)**
 
 ---
 
@@ -225,7 +225,7 @@ Round-trip rules:
 * CSV export is a projection of `beats`
 * CSV import updates `beats` while respecting locks
 
-See: **[[Outline Grid CSV Round-Trip]]**
+See: **[Outline Grid CSV Round-Trip](Outline-Grid-CSV-Round-Trip.md)**
 
 ---
 
@@ -237,8 +237,8 @@ See: **[[Outline Grid CSV Round-Trip]]**
 
 See:
 
-* **[[Story Bible (Creative Intent)]]**
-* **[[Central Matrix (Runtime State)]]**
-* **[[Deterministic Pipeline (SCAN-PLAN-EXECUTE)]]**
+* **[Story Bible](Story-Bible-Creative-Intent.md)**
+* **[Central Matrix](Central-Matrix-Runtime-State.md)**
+* **[Deterministic Pipeline](Deterministic-Pipeline-Scan-Plan-Execute.md)**
 
 

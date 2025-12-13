@@ -3,7 +3,7 @@
 > **Architectural Lineage (Credits):**  
 > SwarmCraft is an **architectural fork and deep rewrite** of the multi-agent swarm engine created by **[Mojomast](https://github.com/mojomast)** in **[mojomast/swarmussy](https://github.com/mojomast/swarmussy)**.  
 > SwarmCraft’s deterministic “Architect-style” layering is also **derived from the meta-structure of Abstract Wiki Architect (AWA)**.  
-> Full details: **[[Credits & Lineage]]**
+> Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
 ## **POWERED BY GROK** ⚡️
 
@@ -135,7 +135,7 @@ In the deterministic loop, the orchestrator operates against exactly one active 
 * EXECUTE writes manuscripts and updates Matrix within that project
 * RAG ingestion/retrieval is scoped to that project’s `memory_db/`
 
-Pipeline: **[[Deterministic Pipeline (SCAN-PLAN-EXECUTE)]]**
+Pipeline: **[Deterministic Pipeline](Deterministic-Pipeline-Scan-Plan-Execute.md)**
 
 ---
 
@@ -148,15 +148,15 @@ The dashboard should clearly display:
 * per-project token usage (session + optional totals)
 * health/integrity signals for that project only
 
-Dashboard: **[[Dashboard TUI Reference]]**
+Dashboard: **[Dashboard TUI Reference](Dashboard-TUI-Reference.md)**
 
 ---
 
 ## 8) Related Pages
 
-* **[[Central Matrix (Runtime State)]]**
-* **[[Story Bible (Creative Intent)]]**
-* **[[RAG Memory System]]**
-* **[[Deterministic Pipeline (SCAN-PLAN-EXECUTE)]]**
+* **[Central Matrix](Central-Matrix-Runtime-State.md)**
+* **[Story Bible](Story-Bible-Creative-Intent.md)**
+* **[RAG Memory System](RAG-Memory-System.md)**
+* **[Deterministic Pipeline](Deterministic-Pipeline-Scan-Plan-Execute.md)**
 
 

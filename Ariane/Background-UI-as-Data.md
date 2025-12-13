@@ -121,6 +121,6 @@ In practice, an agent might:
 
 ## Next
 
-- [[Theseus]] – how Ariane explores and discovers UI states and transitions.  
-- [[Atlas]] – how those states and transitions are stored and described.  
-- [[Consumers]] – how external systems use the resulting data.
+- [Theseus](Theseus.md) – how Ariane explores and discovers UI states and transitions.  
+- [Atlas](Atlas.md) – how those states and transitions are stored and described.  
+- [Consumers](Consumers.md) – how external systems use the resulting data.

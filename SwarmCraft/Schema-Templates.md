@@ -3,7 +3,7 @@
 > **Architectural Lineage (Credits):**  
 > SwarmCraft is an **architectural fork and deep rewrite** of the multi-agent swarm engine created by **[Mojomast](https://github.com/mojomast)** in **[mojomast/swarmussy](https://github.com/mojomast/swarmussy)**.  
 > SwarmCraft’s deterministic “Architect-style” layering is also **derived from the meta-structure of Abstract Wiki Architect (AWA)**.  
-> Full details: **[[Credits & Lineage]]**
+> Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
 ## **POWERED BY GROK** ⚡️
 
@@ -19,7 +19,7 @@ It defines:
 - default parts/chapter + allowed bounds
 - optional style/genre constraints used in prompt hydration
 
-Story scaffold overview: **[[Story Scaffold (Templates-Outline-Parts)]]**
+Story scaffold overview: **[Story Scaffold](Story-Scaffold-Templates-Outline-Parts.md)**
 
 ---
 
@@ -184,8 +184,8 @@ A validator SHOULD enforce:
 
 Related:
 
-* **[[Schema Outline]]**
-* **[[Outline Grid CSV Round-Trip]]**
-* **[[Orchestration Slice-by-Slice Prompt Hydration]]**
+* **[Schema Outline](Schema-Outline.md)**
+* **[Outline Grid CSV Round-Trip](Outline-Grid-CSV-Round-Trip.md)**
+* **[Orchestration Slice-by-Slice Prompt Hydration](Orchestration-Slice-By-Slice-Prompt-Hydration.md)**
 
 

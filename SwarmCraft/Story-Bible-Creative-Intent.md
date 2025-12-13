@@ -3,7 +3,7 @@
 > **Architectural Lineage (Credits):**  
 > SwarmCraft is an **architectural fork and deep rewrite** of the multi-agent swarm engine created by **[Mojomast](https://github.com/mojomast)** in **[mojomast/swarmussy](https://github.com/mojomast/swarmussy)**.  
 > SwarmCraft’s deterministic “Architect-style” layering is also **derived from the meta-structure of Abstract Wiki Architect (AWA)**.  
-> Full details: **[[Credits & Lineage]]**
+> Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
 ## **POWERED BY GROK** ⚡️
 
@@ -16,8 +16,8 @@ It is designed to be:
 - **human-editable** (writers can edit directly or through UI)
 
 The Story Bible is distinct from:
-- **Matrix** (runtime progress state): **[[Central Matrix (Runtime State)]]**
-- **RAG memory** (retrieved continuity evidence): **[[RAG Memory System]]**
+- **Matrix** (runtime progress state): **[Central Matrix](Central-Matrix-Runtime-State.md)**
+- **RAG memory** (retrieved continuity evidence): **[RAG Memory System](RAG-Memory-System.md)**
 
 ---
 
@@ -31,7 +31,7 @@ Single-project setups MAY use:
 
 The Story Bible is project-scoped. Each project has its own Bible and must not share it implicitly.
 
-See: **[[Multi-Project Management]]**
+See: **[Multi-Project Management](Multi-Project-Management.md)**
 
 ---
 
@@ -58,7 +58,7 @@ The scaffold is part of the Story Bible because it is **creative intent**, not r
   Defines chapters → parts mapping, per-part thread beats, and per-part “contract”.
 
 Scaffold entry point:
-- **[[Story Scaffold (Templates-Outline-Parts)]]**
+- **[Story Scaffold](Story-Scaffold-Templates-Outline-Parts.md)**
 
 ---
 

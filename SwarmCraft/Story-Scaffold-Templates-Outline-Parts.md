@@ -3,7 +3,7 @@
 > **Architectural Lineage (Credits):**  
 > SwarmCraft is an **architectural fork and deep rewrite** of the multi-agent swarm engine created by **[Mojomast](https://github.com/mojomast)** in **[mojomast/swarmussy](https://github.com/mojomast/swarmussy)**.  
 > SwarmCraft’s deterministic “Architect-style” layering is also **derived from the meta-structure of Abstract Wiki Architect (AWA)**.  
-> Full details: **[[Credits & Lineage]]**
+> Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
 ## **POWERED BY GROK** ⚡️
 
@@ -18,7 +18,7 @@ The Scaffold lives inside the Story Bible:
 - `data/story_bible/templates/<template_id>.json`
 - `data/story_bible/outline.json`
 
-See: **[[Story Bible (Creative Intent)]]**
+See: **[Story Bible](Story-Bible-Creative-Intent.md)**
 
 ---
 
@@ -35,8 +35,8 @@ A Part is the atomic unit because it enables:
 Chapters are **rollups** over Parts.
 
 Related:
-- **[[Central Matrix (Runtime State)]]**
-- **[[Deterministic Pipeline (SCAN-PLAN-EXECUTE)]]**
+- **[Central Matrix](Central-Matrix-Runtime-State.md)**
+- **[Deterministic Pipeline](Deterministic-Pipeline-Scan-Plan-Execute.md)**
 
 ---
 
@@ -67,7 +67,7 @@ A **template** defines:
 - default and allowed ranges for parts/chapter
 - optional genre voice constraints
 
-Schema: **[[Schema Templates]]**
+Schema: **[Schema Templates](Schema-Templates.md)**
 
 ---
 
@@ -82,7 +82,7 @@ It defines:
   - a “part contract” (goal / obstacle / turn / outcome)
   - optional locks (protect manual edits)
 
-Schema: **[[Schema Outline]]**
+Schema: **[Schema Outline](Schema-Outline.md)**
 
 ---
 
@@ -99,7 +99,7 @@ This is designed to be:
 - easy to edit manually
 - compatible with CSV round-trip when needed
 
-Round-trip spec: **[[Outline Grid CSV Round-Trip]]**
+Round-trip spec: **[Outline Grid CSV Round-Trip](Outline-Grid-CSV-Round-Trip.md)**
 
 ---
 
@@ -114,7 +114,7 @@ During execution, SwarmCraft hydrates prompts with **only the active Part slice*
 
 This prevents the system from “re-summarizing the whole story” every time.
 
-Details: **[[Orchestration Slice-by-Slice Prompt Hydration]]**
+Details: **[Orchestration Slice-by-Slice Prompt Hydration](Orchestration-Slice-By-Slice-Prompt-Hydration.md)**
 
 ---
 
@@ -151,15 +151,15 @@ Matrix stores:
 - manuscript paths and metrics
 - active_task target
 
-Matrix page: **[[Central Matrix (Runtime State)]]**
+Matrix page: **[Central Matrix](Central-Matrix-Runtime-State.md)**
 
 ---
 
 ## 10) Related Pages
 
-- **[[Story Bible (Creative Intent)]]**
-- **[[Schema Templates]]**
-- **[[Schema Outline]]**
-- **[[Outline Grid CSV Round-Trip]]**
-- **[[Orchestration Slice-by-Slice Prompt Hydration]]**
-- **[[Central Matrix (Runtime State)]]**
+- **[Story Bible](Story-Bible-Creative-Intent.md)**
+- **[Schema Templates](Schema-Templates.md)**
+- **[Schema Outline](Schema-Outline.md)**
+- **[Outline Grid CSV Round-Trip](Outline-Grid-CSV-Round-Trip.md)**
+- **[Orchestration Slice-by-Slice Prompt Hydration](Orchestration-Slice-By-Slice-Prompt-Hydration.md)**
+- **[Central Matrix](Central-Matrix-Runtime-State.md)**

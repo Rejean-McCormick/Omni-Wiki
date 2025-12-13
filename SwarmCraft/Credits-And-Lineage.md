@@ -44,7 +44,7 @@ SwarmCraft replaces chatroom-style emergent coordination with a strict loop:
 - PLAN: select the next target Part and action
 - EXECUTE: run one persona on one Part using guarded tools
 
-See: **[[Deterministic Pipeline (SCAN-PLAN-EXECUTE)]]**
+See: **[Deterministic Pipeline](Deterministic-Pipeline-Scan-Plan-Execute.md)**
 
 ### 2.2 State-first narrative architecture (Brain / Logic / Memory)
 SwarmCraft formalizes narrative work into explicit layers:
@@ -53,15 +53,15 @@ SwarmCraft formalizes narrative work into explicit layers:
 - **Logic**: orchestrator + tools + validation
 - **Memory**: Matrix + Story Bible + RAG index
 
-See: **[[Architecture Overview]]**
+See: **[Architecture Overview](Architecture-Overview.md)**
 
 ### 2.3 Parts-based story execution
 SwarmCraft treats a **Part** as the atomic unit of drafting/revision.
 Chapters are rollups over Parts.
 
 See:
-- **[[Central Matrix (Runtime State)]]**
-- **[[Orchestration Slice-by-Slice Prompt Hydration]]**
+- **[Central Matrix](Central-Matrix-Runtime-State.md)**
+- **[Orchestration Slice-by-Slice Prompt Hydration](Orchestration-Slice-By-Slice-Prompt-Hydration.md)**
 
 ### 2.4 Story Scaffold (Templates + Outline + Grid)
 SwarmCraft introduces a structured story scaffold designed for both humans and LLMs:
@@ -71,10 +71,10 @@ SwarmCraft introduces a structured story scaffold designed for both humans and L
 - Grid view displays the outline as a spreadsheet-like matrix, with optional CSV round-trip
 
 See:
-- **[[Story Scaffold (Templates-Outline-Parts)]]**
-- **[[Schema Templates]]**
-- **[[Schema Outline]]**
-- **[[Outline Grid CSV Round-Trip]]**
+- **[Story Scaffold](Story-Scaffold-Templates-Outline-Parts.md)**
+- **[Schema Templates](Schema-Templates.md)**
+- **[Schema Outline](Schema-Outline.md)**
+- **[Outline Grid CSV Round-Trip](Outline-Grid-CSV-Round-Trip.md)**
 
 ### 2.5 Multi-project isolation
 Each project has isolated:
@@ -82,12 +82,12 @@ Each project has isolated:
 - Story Bible
 - Memory DB (RAG)
 
-See: **[[Multi-Project Management]]**
+See: **[Multi-Project Management](Multi-Project-Management.md)**
 
 ### 2.6 RAG long-term continuity
 SwarmCraft integrates per-project retrieval memory to maintain coherence in long works.
 
-See: **[[RAG Memory System]]**
+See: **[RAG Memory System](RAG-Memory-System.md)**
 
 ---
 
@@ -98,7 +98,7 @@ SwarmCraft is **powered by Grok** via a provider adapter that keeps the engine p
 - normalized tool calling
 - centralized retries and error handling
 
-See: **[[Provider Adapter Grok]]**
+See: **[Provider Adapter Grok](Provider-Adapter-Grok.md)**
 
 ---
 

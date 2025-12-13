@@ -171,14 +171,14 @@ From Ariane’s perspective, such a client:
 
 This concept is not part of the core specification for Ariane, but documenting it here clarifies how the data model can support such use cases.
 
-See: [[Consumers/Future-Overlay-Client]]
+See: [Consumers/Future-Overlay-Client](Consumers-Future-Overlay-Client.md)
 
 ---
 
 ## Related Pages
 
-- [[Consumers/AI-Agent-Integration]] – more focused view on AI agents using Ariane.  
-- [[Atlas]] – storage and semantic layer that consumers query.  
-- [[Atlas/Graph-Model]] – structural view of states and transitions.  
-- [[Atlas/Core-Schema]] – fields available to consumers.  
-- [[Background-UI-as-Data]] – motivation for exposing UIs as data.
+- [Consumers/AI-Agent-Integration](Consumers-AI-Agent-Integration.md) – more focused view on AI agents using Ariane.  
+- [Atlas](Atlas.md) – storage and semantic layer that consumers query.  
+- [Atlas/Graph-Model](Atlas-Graph-Model.md) – structural view of states and transitions.  
+- [Atlas/Core-Schema](Atlas-Core-Schema.md) – fields available to consumers.  
+- [Background-UI-as-Data](Background-UI-as-Data.md) – motivation for exposing UIs as data.

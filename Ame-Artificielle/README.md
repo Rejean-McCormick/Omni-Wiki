@@ -77,6 +77,6 @@ For details about:
 
 see the dedicated technical page:
 
-* [Konnaxion – Technical Architecture & Services](Konnaxion-–-Technical-Architecture-&-Services.md)
+* [Konnaxion – Technical Architecture & Services](Konnaxion-Technical-Architecture-And-Services.md)
 
 That page consolidates the “technicalities” from the module specifications and the original system‑overview draft, so this hub can stay focused on workflows and navigation.

@@ -224,7 +224,7 @@ Atlas then persists this information and makes it available to consumers.
 
 ## Related Pages
 
-- [[Theseus]] – overview of the exploration engine.  
-- [[Theseus/State-Identification]] – how states are fingerprinted and recognized.  
-- [[Atlas]] – how the discovered graph is stored and exposed to external systems.  
-- [[Consumers/AI-Agent-Integration]] – how agents use the resulting graph during guidance.
+- [Theseus](Theseus.md) – overview of the exploration engine.  
+- [Theseus/State-Identification](Theseus-State-Identification.md) – how states are fingerprinted and recognized.  
+- [Atlas](Atlas.md) – how the discovered graph is stored and exposed to external systems.  
+- [Consumers/AI-Agent-Integration](Consumers-AI-Agent-Integration.md) – how agents use the resulting graph during guidance.

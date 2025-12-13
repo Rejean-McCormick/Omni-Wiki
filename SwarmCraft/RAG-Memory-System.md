@@ -3,7 +3,7 @@
 > **Architectural Lineage (Credits):**  
 > SwarmCraft is an **architectural fork and deep rewrite** of the multi-agent swarm engine created by **[Mojomast](https://github.com/mojomast)** in **[mojomast/swarmussy](https://github.com/mojomast/swarmussy)**.  
 > SwarmCraft’s deterministic “Architect-style” layering is also **derived from the meta-structure of Abstract Wiki Architect (AWA)**.  
-> Full details: **[[Credits & Lineage]]**
+> Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
 ## **POWERED BY GROK** ⚡️
 
@@ -47,7 +47,7 @@ RAG SHOULD store per-chunk metadata:
 
 RAG MUST NOT be treated as canonical intent. If RAG conflicts with Story Bible, Story Bible wins.
 
-See: **[[Story Bible (Creative Intent)]]**
+See: **[Story Bible](Story-Bible-Creative-Intent.md)**
 
 ---
 
@@ -58,7 +58,7 @@ Recommended location:
 
 This ensures multi-project isolation and avoids cross-story contamination.
 
-See: **[[Multi-Project Management]]**
+See: **[Multi-Project Management](Multi-Project-Management.md)**
 
 ---
 
@@ -72,7 +72,7 @@ Flow:
 3. Each chunk is embedded (vectorized).
 4. Vectors + metadata are stored in the project’s vector database.
 
-Deterministic pipeline: **[[Deterministic Pipeline (SCAN-PLAN-EXECUTE)]]**
+Deterministic pipeline: **[Deterministic Pipeline](Deterministic-Pipeline-Scan-Plan-Execute.md)**
 
 ### 4.1 Chunking recommendations
 - chunk by paragraph boundaries when possible
@@ -97,7 +97,7 @@ Flow:
 2. Vector search returns top-k relevant chunks.
 3. Orchestrator formats them as “evidence” and injects them into the prompt.
 
-Prompt hydration: **[[Orchestration Slice-by-Slice Prompt Hydration]]**
+Prompt hydration: **[Orchestration Slice-by-Slice Prompt Hydration](Orchestration-Slice-By-Slice-Prompt-Hydration.md)**
 
 ### 5.1 Bounded retrieval (required)
 To prevent prompt bloat:
@@ -166,10 +166,10 @@ Recommended role rules:
 
 ## 9) Related Pages
 
-* **[[Architecture Overview]]**
-* **[[Deterministic Pipeline (SCAN-PLAN-EXECUTE)]]**
-* **[[Orchestration Slice-by-Slice Prompt Hydration]]**
-* **[[Story Bible (Creative Intent)]]**
-* **[[Central Matrix (Runtime State)]]**
+* **[Architecture Overview](Architecture-Overview.md)**
+* **[Deterministic Pipeline](Deterministic-Pipeline-Scan-Plan-Execute.md)**
+* **[Orchestration Slice-by-Slice Prompt Hydration](Orchestration-Slice-By-Slice-Prompt-Hydration.md)**
+* **[Story Bible](Story-Bible-Creative-Intent.md)**
+* **[Central Matrix](Central-Matrix-Runtime-State.md)**
 
 

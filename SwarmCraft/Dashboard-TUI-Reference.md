@@ -5,7 +5,7 @@
 > SwarmCraft is an **architectural fork and deep rewrite** of the multi-agent swarm engine created by **[Mojomast](https://github.com/mojomast)** in **[mojomast/swarmussy](https://github.com/mojomast/swarmussy)**.  
 > The dashboard pattern is also downstream of Mojomast’s original “mission control” approach for observing swarm activity.  
 > SwarmCraft’s deterministic layering is derived from the meta-structure of **Abstract Wiki Architect (AWA)**.  
-> Full details: **[[Credits & Lineage]]**
+> Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
 ## **POWERED BY GROK** ⚡️
 
@@ -29,7 +29,7 @@ The dashboard should primarily read:
 
 The dashboard must never be the source of truth; it is a view/controller.
 
-Matrix reference: **[[Central Matrix (Runtime State)]]**
+Matrix reference: **[Central Matrix](Central-Matrix-Runtime-State.md)**
 
 ---
 
@@ -131,7 +131,7 @@ The deterministic loop remains intact:
 
 * overrides influence selection, not execution ordering
 
-Pipeline: **[[Deterministic Pipeline (SCAN-PLAN-EXECUTE)]]**
+Pipeline: **[Deterministic Pipeline](Deterministic-Pipeline-Scan-Plan-Execute.md)**
 
 ---
 
@@ -143,7 +143,7 @@ If multiple projects exist, dashboard SHOULD display:
 * quick switch mechanism (implementation dependent)
 * project health summary
 
-Multi-project: **[[Multi-Project Management]]**
+Multi-project: **[Multi-Project Management](Multi-Project-Management.md)**
 
 ---
 
@@ -161,7 +161,7 @@ Recommended indicators:
 * last SCAN time
 * last EXECUTE time
 
-Matrix includes timestamps: **[[Central Matrix (Runtime State)]]**
+Matrix includes timestamps: **[Central Matrix](Central-Matrix-Runtime-State.md)**
 
 ---
 
@@ -177,9 +177,9 @@ All modifications should go through the engine tools layer.
 
 ## 8) Related Pages
 
-* **[[Central Matrix (Runtime State)]]**
-* **[[Deterministic Pipeline (SCAN-PLAN-EXECUTE)]]**
-* **[[Story Bible (Creative Intent)]]**
-* **[[Multi-Project Management]]**
+* **[Central Matrix](Central-Matrix-Runtime-State.md)**
+* **[Deterministic Pipeline](Deterministic-Pipeline-Scan-Plan-Execute.md)**
+* **[Story Bible](Story-Bible-Creative-Intent.md)**
+* **[Multi-Project Management](Multi-Project-Management.md)**
 
 

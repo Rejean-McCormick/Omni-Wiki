@@ -38,7 +38,7 @@ Internally, the agent should map this to:
 
 Ariane does not perform this mapping itself; it exposes a vocabulary of intents that the agent can align to.
 
-See: [[Atlas/Ontology-Vocabulary]]
+See: [Atlas/Ontology-Vocabulary](Atlas-Ontology-Vocabulary.md)
 
 ---
 

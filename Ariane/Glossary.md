@@ -168,7 +168,7 @@ A fingerprint component derived from a screenshot or rendered view of the UI, in
 
 ## Related Pages
 
-- [[Background-UI-as-Data]] – conceptual motivation and knowledge domains.  
-- [[Theseus]] – exploration engine and drivers.  
-- [[Atlas]] – storage and semantic model.  
-- [[Consumers]] – how external systems use Ariane’s data.
+- [Background-UI-as-Data](Background-UI-as-Data.md) – conceptual motivation and knowledge domains.  
+- [Theseus](Theseus.md) – exploration engine and drivers.  
+- [Atlas](Atlas.md) – storage and semantic model.  
+- [Consumers](Consumers.md) – how external systems use Ariane’s data.

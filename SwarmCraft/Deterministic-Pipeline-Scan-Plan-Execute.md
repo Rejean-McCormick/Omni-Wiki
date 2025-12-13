@@ -3,7 +3,7 @@
 > **Architectural Lineage (Credits):**  
 > SwarmCraft is an **architectural fork and deep rewrite** of the multi-agent swarm engine created by **[Mojomast](https://github.com/mojomast)** in **[mojomast/swarmussy](https://github.com/mojomast/swarmussy)**.  
 > SwarmCraft’s deterministic “Architect-style” layering is also **derived from the meta-structure of Abstract Wiki Architect (AWA)**.  
-> Full details: **[[Credits & Lineage]]**
+> Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
 ## **POWERED BY GROK** ⚡️
 
@@ -90,7 +90,7 @@ A scanner SHOULD classify a Part as:
 - `REVISION_NEEDED`: flagged by Editor or override
 - `LOCKED`: protected from further automated edits
 
-Matrix semantics: **[[Central Matrix (Runtime State)]]**
+Matrix semantics: **[Central Matrix](Central-Matrix-Runtime-State.md)**
 
 ---
 
@@ -139,7 +139,7 @@ Before invoking a persona, the orchestrator MUST hydrate a **Part slice**:
   - relevant character/lore snippets (only what’s needed)
 - project-level style constraints
 
-Details: **[[Orchestration Slice-by-Slice Prompt Hydration]]**
+Details: **[Orchestration Slice-by-Slice Prompt Hydration](Orchestration-Slice-By-Slice-Prompt-Hydration.md)**
 
 ### 4.2 Narrator execution (DRAFT / REVISE)
 If action is `DRAFT` or `REVISE`:
@@ -187,14 +187,14 @@ On restart:
 - Dashboard observes `matrix.json`, logs, and metrics without blocking the engine.
 - Control signals/overrides may affect PLAN (target selection) without breaking the deterministic loop.
 
-Dashboard: **[[Dashboard TUI Reference]]**
+Dashboard: **[Dashboard TUI Reference](Dashboard-TUI-Reference.md)**
 
 ---
 
 ## 7) Related Pages
 
-- **[[Architecture Overview]]**
-- **[[Central Matrix (Runtime State)]]**
-- **[[Story Bible (Creative Intent)]]**
-- **[[Story Scaffold (Templates-Outline-Parts)]]**
-- **[[Orchestration Slice-by-Slice Prompt Hydration]]**
+- **[Architecture Overview](Architecture-Overview.md)**
+- **[Central Matrix](Central-Matrix-Runtime-State.md)**
+- **[Story Bible](Story-Bible-Creative-Intent.md)**
+- **[Story Scaffold](Story-Scaffold-Templates-Outline-Parts.md)**
+- **[Orchestration Slice-by-Slice Prompt Hydration](Orchestration-Slice-By-Slice-Prompt-Hydration.md)**

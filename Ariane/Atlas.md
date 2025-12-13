@@ -85,7 +85,7 @@ Atlas organizes data around a few core entity types:
 
 These entities are defined in more detail in the core schema.
 
-See: [[Atlas/Core-Schema]]
+See: [Atlas/Core-Schema](Atlas-Core-Schema.md)
 
 ---
 
@@ -103,7 +103,7 @@ This **ontology** allows consumers to:
 - Search by intent instead of raw labels (“find all actions that save a document”).
 - Reason about UI patterns (“find all confirmation dialogs with destructive actions”).
 
-See: [[Atlas/Ontology-Vocabulary]]
+See: [Atlas/Ontology-Vocabulary](Atlas-Ontology-Vocabulary.md)
 
 ---
 
@@ -121,7 +121,7 @@ Common queries include:
 - Given a **state** and an **intent**, find all transitions that match the intent.
 - Given a **start state** and **goal condition**, find a path (sequence of actions).
 
-See: [[Atlas/Graph-Model]]
+See: [Atlas/Graph-Model](Atlas-Graph-Model.md)
 
 ---
 
@@ -161,7 +161,7 @@ Typical access patterns:
 
 The exact APIs and query mechanisms (e.g., graph queries, RPC, or HTTP endpoints) are implementation details.
 
-See: [[Consumers/AI-Agent-Integration]]
+See: [Consumers/AI-Agent-Integration](Consumers-AI-Agent-Integration.md)
 
 ---
 
@@ -186,8 +186,8 @@ Specific mechanisms (e.g., signing or validation processes) can be added in impl
 
 ## Related Pages
 
-- [[Theseus]] – exploration engine that discovers states and transitions.  
-- [[Atlas/Graph-Model]] – structural view of the UI graph.  
-- [[Atlas/Core-Schema]] – formal definitions of context, states, elements, and transitions.  
-- [[Atlas/Ontology-Vocabulary]] – semantic categories and intents used in Atlas.  
-- [[Consumers]] – how external systems use data stored in Atlas.
+- [Theseus](Theseus.md) – exploration engine that discovers states and transitions.  
+- [Atlas/Graph-Model](Atlas-Graph-Model.md) – structural view of the UI graph.  
+- [Atlas/Core-Schema](Atlas-Core-Schema.md) – formal definitions of context, states, elements, and transitions.  
+- [Atlas/Ontology-Vocabulary](Atlas-Ontology-Vocabulary.md) – semantic categories and intents used in Atlas.  
+- [Consumers](Consumers.md) – how external systems use data stored in Atlas.

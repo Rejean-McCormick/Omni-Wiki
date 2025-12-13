@@ -3,7 +3,7 @@
 > **Architectural Lineage (Credits):**  
 > SwarmCraft is an **architectural fork and deep rewrite** of the multi-agent swarm engine created by **[Mojomast](https://github.com/mojomast)** in **[mojomast/swarmussy](https://github.com/mojomast/swarmussy)**.  
 > SwarmCraft’s deterministic “Architect-style” layering is also **derived from the meta-structure of Abstract Wiki Architect (AWA)**.  
-> Full details: **[[Credits & Lineage]]**
+> Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
 ## **POWERED BY GROK** ⚡️
 
@@ -63,7 +63,7 @@ SwarmCraft runs a strict cycle:
 - **EXECUTE**  
   Narrator/Editor runs for exactly one Part. All mutations occur via tools, then the system returns to SCAN.
 
-Details: **[[Deterministic Pipeline (SCAN → PLAN → EXECUTE)]]**
+Details: **[Deterministic Pipeline](Deterministic-Pipeline-Scan-Plan-Execute.md)**
 
 ---
 
@@ -78,14 +78,14 @@ It tracks:
 - active task target (always a **Part**)
 - word counts, timestamps, metrics
 
-Details: **[[Central Matrix (Runtime State)]]**
+Details: **[Central Matrix](Central-Matrix-Runtime-State.md)**
 
 ### 3.2 Story Bible (Creative Intent)
 The Story Bible stores the canonical creative plan:
 - characters, lore, constraints, style rules
 - **templates** and **outline** (the Story Scaffold)
 
-Details: **[[Story Bible (Creative Intent)]]**
+Details: **[Story Bible](Story-Bible-Creative-Intent.md)**
 
 ### 3.3 Story Scaffold (Templates + Outline + Parts)
 The scaffold is the structured narrative “grid” that humans and the Wizard can edit:
@@ -102,10 +102,10 @@ The scaffold is the structured narrative “grid” that humans and the Wizard c
   - locks (protect manual edits)
 
 Details:
-- **[[Story Scaffold (Templates + Outline + Parts)]]**
-- **[[Schema: Templates]]**
-- **[[Schema: Outline]]**
-- **[[Outline Grid & CSV Round-Trip]]**
+- **[Story Scaffold](Story-Scaffold-Templates-Outline-Parts.md)**
+- **[Schema: Templates](Schema: Templates.md)**
+- **[Schema: Outline](Schema: Outline.md)**
+- **[Outline Grid & CSV Round-Trip](Outline-Grid-CSV-Round-Trip.md)**
 
 ---
 
@@ -120,7 +120,7 @@ A **Part** is the atomic unit SwarmCraft drafts and revises.
   - better continuity control
   - clearer status tracking
 
-Part orchestration: **[[Orchestration: Slice-by-Slice Prompt Hydration]]**
+Part orchestration: **[Orchestration: Slice-by-Slice Prompt Hydration](Orchestration-Slice-By-Slice-Prompt-Hydration.md)**
 
 ---
 
@@ -133,7 +133,7 @@ SwarmCraft supports multiple isolated projects (universes):
   - `story_bible/`
   - `memory_db/`
 
-Details: **[[Multi-Project Management]]**
+Details: **[Multi-Project Management](Multi-Project-Management.md)**
 
 ---
 
@@ -144,7 +144,7 @@ The memory system ingests written prose and enables semantic retrieval:
 - reduces plot holes
 - avoids bloating prompts with “story so far”
 
-Details: **[[RAG Memory System]]**
+Details: **[RAG Memory System](RAG-Memory-System.md)**
 
 ---
 
@@ -153,7 +153,7 @@ Details: **[[RAG Memory System]]**
 SwarmCraft is designed to be observable and steerable:
 
 - **TUI Dashboard**: real-time view of tasks, logs, and state  
-  Details: **[[Dashboard (TUI) Reference]]**
+  Details: **[Dashboard  Reference](Dashboard-TUI-Reference.md)**
 
 - **Control file** (implementation-specific): pause/resume/override planning without coupling UI to engine.
 
@@ -166,13 +166,13 @@ SwarmCraft uses a provider adapter to keep the engine model-agnostic:
 - centralizes API settings and error handling
 - enables “Powered by Grok” without hardwiring provider logic everywhere
 
-Details: **[[Provider Adapter: Grok]]**
+Details: **[Provider Adapter: Grok](Provider-Adapter-Grok.md)**
 
 ---
 
 ## 9) Where to Go Next
 
-- **[[Deterministic Pipeline (SCAN → PLAN → EXECUTE)]]**
-- **[[Central Matrix (Runtime State)]]**
-- **[[Story Scaffold (Templates + Outline + Parts)]]**
-- **[[Orchestration: Slice-by-Slice Prompt Hydration]]**
+- **[Deterministic Pipeline](Deterministic-Pipeline-Scan-Plan-Execute.md)**
+- **[Central Matrix](Central-Matrix-Runtime-State.md)**
+- **[Story Scaffold](Story-Scaffold-Templates-Outline-Parts.md)**
+- **[Orchestration: Slice-by-Slice Prompt Hydration](Orchestration-Slice-By-Slice-Prompt-Hydration.md)**

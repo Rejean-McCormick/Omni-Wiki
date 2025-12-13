@@ -1,0 +1,70 @@
+{
+  "renaming_plan": [
+    {
+      "module": "Ame-Artificielle",
+      "reason": "Fix 'ALL CAPS' (Fix Maj) to standard Title-Case for readability and URL consistency.",
+      "changes": [
+        {
+          "current": "Ame-Artificielle/CONTROLE_ET_PERSONNALISATION.md",
+          "new": "Ame-Artificielle/Controle-Et-Personnalisation.md"
+        },
+        {
+          "current": "Ame-Artificielle/CREATION_DE_CHEMINS.md",
+          "new": "Ame-Artificielle/Creation-De-Chemins.md"
+        },
+        {
+          "current": "Ame-Artificielle/ETHIQUE_ET_GOUVERNANCE.md",
+          "new": "Ame-Artificielle/Ethique-Et-Gouvernance.md"
+        },
+        {
+          "current": "Ame-Artificielle/META_COGNITION_ET_RESOLUTION.md",
+          "new": "Ame-Artificielle/Meta-Cognition-Et-Resolution.md"
+        },
+        {
+          "current": "Ame-Artificielle/SPECIFICATIONS_FONCTIONNELLES.md",
+          "new": "Ame-Artificielle/Specifications-Fonctionnelles.md"
+        }
+      ]
+    },
+    {
+      "module": "Konnaxion",
+      "reason": "Remove special characters ('&', '–') that cause broken links.",
+      "changes": [
+        {
+          "current": "Konnaxion/Konnaxion-–-Technical-Architecture-&-Services.md",
+          "new": "Konnaxion/Konnaxion-Technical-Architecture-And-Services.md"
+        }
+      ]
+    },
+    {
+      "module": "SwarmCraft",
+      "reason": "Remove parentheses '()' and ampersands '&' from filenames; fix inconsistent capitalization.",
+      "changes": [
+        {
+          "current": "SwarmCraft/Central-Matrix-(Runtime-State).md",
+          "new": "SwarmCraft/Central-Matrix-Runtime-State.md"
+        },
+        {
+          "current": "SwarmCraft/Credits-&-Lineage.md",
+          "new": "SwarmCraft/Credits-And-Lineage.md"
+        },
+        {
+          "current": "SwarmCraft/Deterministic-Pipeline-(SCAN-PLAN-EXECUTE).md",
+          "new": "SwarmCraft/Deterministic-Pipeline-Scan-Plan-Execute.md"
+        },
+        {
+          "current": "SwarmCraft/Orchestration-Slice-by-Slice-Prompt-Hydration.md",
+          "new": "SwarmCraft/Orchestration-Slice-By-Slice-Prompt-Hydration.md"
+        },
+        {
+          "current": "SwarmCraft/Story-Bible-(Creative-Intent).md",
+          "new": "SwarmCraft/Story-Bible-Creative-Intent.md"
+        },
+        {
+          "current": "SwarmCraft/Story-Scaffold-(Templates-Outline-Parts).md",
+          "new": "SwarmCraft/Story-Scaffold-Templates-Outline-Parts.md"
+        }
+      ]
+    }
+  ]
+}

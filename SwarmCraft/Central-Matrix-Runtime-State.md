@@ -3,7 +3,7 @@
 > **Architectural Lineage (Credits):**  
 > SwarmCraft is an **architectural fork and deep rewrite** of the multi-agent swarm engine created by **[Mojomast](https://github.com/mojomast)** in **[mojomast/swarmussy](https://github.com/mojomast/swarmussy)**.  
 > SwarmCraft’s deterministic “Architect-style” layering is also **derived from the meta-structure of Abstract Wiki Architect (AWA)**.  
-> Full details: **[[Credits & Lineage]]**
+> Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
 ## **POWERED BY GROK** ⚡️
 
@@ -16,8 +16,8 @@ It is designed to be:
 - **human-editable** (writers can edit directly or through UI)
 
 The Story Bible is distinct from:
-- **Matrix** (runtime progress state): **[[Central Matrix (Runtime State)]]**
-- **RAG memory** (retrieved continuity evidence): **[[RAG Memory System]]**
+- **Matrix** (runtime progress state): **[Central Matrix](Central-Matrix-Runtime-State.md)**
+- **RAG memory** (retrieved continuity evidence): **[RAG Memory System](RAG-Memory-System.md)**
 
 ---
 
@@ -31,7 +31,7 @@ Single-project setups MAY use:
 
 The Story Bible is project-scoped. Each project has its own Bible and must not share it implicitly.
 
-See: **[[Multi-Project Management]]**
+See: **[Multi-Project Management](Multi-Project-Management.md)**
 
 ---
 
@@ -58,7 +58,7 @@ The scaffold is part of the Story Bible because it is **creative intent**, not r
   Defines chapters → parts mapping, per-part thread beats, and per-part “contract”.
 
 Scaffold entry point:
-- **[[Story Scaffold (Templates-Outline-Parts)]]**
+- **[Story Scaffold](Story-Scaffold-Templates-Outline-Parts.md)**
 
 ---
 
@@ -108,7 +108,7 @@ This is a recommendation, not a constraint—projects may reorganize, but the en
 * Derived from disk and updated by tools.
 * Tracks statuses and active tasks.
 
-See: **[[Central Matrix (Runtime State)]]**
+See: **[Central Matrix](Central-Matrix-Runtime-State.md)**
 
 ### RAG Memory (Evidence)
 
@@ -116,7 +116,7 @@ See: **[[Central Matrix (Runtime State)]]**
 * Queried to prevent continuity drift.
 * Does not define intent; it provides recall.
 
-See: **[[RAG Memory System]]**
+See: **[RAG Memory System](RAG-Memory-System.md)**
 
 ---
 
@@ -132,7 +132,7 @@ Instead, the orchestrator hydrates prompts by selecting only:
 
 This reduces repetition, keeps cost stable, and prevents “prompt sprawl.”
 
-See: **[[Orchestration Slice-by-Slice Prompt Hydration]]**
+See: **[Orchestration Slice-by-Slice Prompt Hydration](Orchestration-Slice-By-Slice-Prompt-Hydration.md)**
 
 ---
 
@@ -151,7 +151,7 @@ The Story Bible supports three editing modes:
 
 Grid + CSV:
 
-* **[[Outline Grid CSV Round-Trip]]**
+* **[Outline Grid CSV Round-Trip](Outline-Grid-CSV-Round-Trip.md)**
 
 ---
 
@@ -168,10 +168,10 @@ The scanner/orchestrator SHOULD validate:
 
 ## 8) Related Pages
 
-* **[[Story Scaffold (Templates-Outline-Parts)]]**
-* **[[Schema Templates]]**
-* **[[Schema Outline]]**
-* **[[Outline Grid CSV Round-Trip]]**
-* **[[Central Matrix (Runtime State)]]**
-* **[[Orchestration Slice-by-Slice Prompt Hydration]]**
+* **[Story Scaffold](Story-Scaffold-Templates-Outline-Parts.md)**
+* **[Schema Templates](Schema-Templates.md)**
+* **[Schema Outline](Schema-Outline.md)**
+* **[Outline Grid CSV Round-Trip](Outline-Grid-CSV-Round-Trip.md)**
+* **[Central Matrix](Central-Matrix-Runtime-State.md)**
+* **[Orchestration Slice-by-Slice Prompt Hydration](Orchestration-Slice-By-Slice-Prompt-Hydration.md)**
 

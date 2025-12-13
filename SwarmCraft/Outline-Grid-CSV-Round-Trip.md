@@ -3,7 +3,7 @@
 > **Architectural Lineage (Credits):**  
 > SwarmCraft is an **architectural fork and deep rewrite** of the multi-agent swarm engine created by **[Mojomast](https://github.com/mojomast)** in **[mojomast/swarmussy](https://github.com/mojomast/swarmussy)**.  
 > SwarmCraft’s deterministic “Architect-style” layering is also **derived from the meta-structure of Abstract Wiki Architect (AWA)**.  
-> Full details: **[[Credits & Lineage]]**
+> Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
 ## **POWERED BY GROK** ⚡️
 
@@ -27,9 +27,9 @@ This page specifies how `outline.json` maps to a grid and how CSV import/export 
 
 Source of truth:
 - Threads come from `templates/<template_id>.json`  
-  See: **[[Schema Templates]]**
+  See: **[Schema Templates](Schema-Templates.md)**
 - Beats come from `outline.json`  
-  See: **[[Schema Outline]]**
+  See: **[Schema Outline](Schema-Outline.md)**
 
 ### 1.2 What is NOT in the grid (by default)
 - Part contract fields (goal/obstacle/turn/outcome)  
@@ -182,16 +182,16 @@ The grid is a scaffold. The engine uses it slice-by-slice:
 
 See:
 
-* **[[Orchestration Slice-by-Slice Prompt Hydration]]**
-* **[[Deterministic Pipeline (SCAN-PLAN-EXECUTE)]]**
+* **[Orchestration Slice-by-Slice Prompt Hydration](Orchestration-Slice-By-Slice-Prompt-Hydration.md)**
+* **[Deterministic Pipeline](Deterministic-Pipeline-Scan-Plan-Execute.md)**
 
 ---
 
 ## 9) Related Pages
 
-* **[[Story Scaffold (Templates-Outline-Parts)]]**
-* **[[Schema Templates]]**
-* **[[Schema Outline]]**
-* **[[Central Matrix (Runtime State)]]**
+* **[Story Scaffold](Story-Scaffold-Templates-Outline-Parts.md)**
+* **[Schema Templates](Schema-Templates.md)**
+* **[Schema Outline](Schema-Outline.md)**
+* **[Central Matrix](Central-Matrix-Runtime-State.md)**
 
 

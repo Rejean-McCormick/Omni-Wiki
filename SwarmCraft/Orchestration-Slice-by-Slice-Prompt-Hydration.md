@@ -3,7 +3,7 @@
 > **Architectural Lineage (Credits):**  
 > SwarmCraft is an **architectural fork and deep rewrite** of the multi-agent swarm engine created by **[Mojomast](https://github.com/mojomast)** in **[mojomast/swarmussy](https://github.com/mojomast/swarmussy)**.  
 > SwarmCraft’s deterministic “Architect-style” layering is also **derived from the meta-structure of Abstract Wiki Architect (AWA)**.  
-> Full details: **[[Credits & Lineage]]**
+> Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
 ## **POWERED BY GROK** ⚡️
 
@@ -41,9 +41,9 @@ Hydration assembles a prompt from four categories:
    - top-k RAG snippets relevant to this Part’s contract/beat queries
 
 Related sources:
-- Outline: **[[Schema Outline]]**
-- Template threads/cadence: **[[Schema Templates]]**
-- RAG: **[[RAG Memory System]]**
+- Outline: **[Schema Outline](Schema-Outline.md)**
+- Template threads/cadence: **[Schema Templates](Schema-Templates.md)**
+- RAG: **[RAG Memory System](RAG-Memory-System.md)**
 
 ---
 
@@ -69,7 +69,7 @@ If `outline.parts[part_id].locks.manuscript == true`:
 - orchestrator MUST NOT hydrate a drafting prompt for that part
 - only review/inspection is allowed (implementation choice)
 
-Matrix locking semantics: **[[Central Matrix (Runtime State)]]**
+Matrix locking semantics: **[Central Matrix](Central-Matrix-Runtime-State.md)**
 
 ---
 
@@ -194,7 +194,7 @@ Cadence rules come from the template and influence both PLAN and REVIEW:
 * PLAN may select parts with missing required beats (per-part cadence)
 * REVIEW may fail a part if required beats are not reflected in prose (when configured)
 
-Template cadence: **[[Schema Templates]]**
+Template cadence: **[Schema Templates](Schema-Templates.md)**
 
 ---
 
@@ -209,11 +209,11 @@ Template cadence: **[[Schema Templates]]**
 
 ## 9) Related Pages
 
-* **[[Deterministic Pipeline (SCAN-PLAN-EXECUTE)]]**
-* **[[Story Scaffold (Templates-Outline-Parts)]]**
-* **[[Schema Templates]]**
-* **[[Schema Outline]]**
-* **[[Central Matrix (Runtime State)]]**
-* **[[RAG Memory System]]**
+* **[Deterministic Pipeline](Deterministic-Pipeline-Scan-Plan-Execute.md)**
+* **[Story Scaffold](Story-Scaffold-Templates-Outline-Parts.md)**
+* **[Schema Templates](Schema-Templates.md)**
+* **[Schema Outline](Schema-Outline.md)**
+* **[Central Matrix](Central-Matrix-Runtime-State.md)**
+* **[RAG Memory System](RAG-Memory-System.md)**
 
 
