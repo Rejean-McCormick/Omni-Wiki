@@ -1,52 +1,58 @@
-﻿# 1. On définit l'entête exact que vous voulez
-$summaryContent = @"
-# Table des matières
+# Table of Contents
 
-* [Accueil (Rejean McCormick)](README.md)
+* [Home (Rejean McCormick)](README.md)
+* [Konnaxion](Konnaxion/Home.md)
+  * [CertifiKation](Konnaxion/CertifiKation.md)
+  * [EkoH](Konnaxion/EkoH.md)
+  * [Knowledge](Konnaxion/Knowledge.md)
+  * [Konnaxion – Technical Architecture & Services](Konnaxion/Konnaxion-–-Technical-Architecture-&-Services.md)
+  * [Konservation](Konnaxion/Konservation.md)
+  * [Konstruct](Konnaxion/Konstruct.md)
+  * [Konsultations](Konnaxion/Konsultations.md)
+  * [Kontact](Konnaxion/Kontact.md)
+  * [Korum](Konnaxion/Korum.md)
+  * [Smart Vote](Konnaxion/Smart-Vote.md)
+  * [Stockage](Konnaxion/Stockage.md)
+* [Orgo](Orgo/Home.md)
 
-"@
+## Other Modules
 
-# 2. Fonction pour générer les liens d'un dossier
-function Add-Module {
-    param ($folder, $title)
-    
-    if (Test-Path $folder) {
-        # Cherche le fichier principal (README.md ou Home.md)
-        $mainFile = ""
-        if (Test-Path "$folder\README.md") { $mainFile = "$folder/README.md" }
-        elseif (Test-Path "$folder\Home.md") { $mainFile = "$folder/Home.md" }
-
-        # Ajoute le titre du module (Lien principal)
-        if ($mainFile) {
-            $script:summaryContent += "* [$title]($mainFile)`n"
-        } else {
-            $script:summaryContent += "* [$title]()`n" # Titre sans lien si pas de Home
-        }
-
-        # Ajoute les sous-pages (indalées)
-        Get-ChildItem -Path $folder -Filter *.md | 
-            Where-Object { $_.Name -ne "README.md" -and $_.Name -ne "Home.md" } | 
-            ForEach-Object {
-                $subTitle = $_.BaseName -replace "-", " " # Enlève les tirets pour le titre
-                $script:summaryContent += "  * [$subTitle]($folder/$($_.Name))`n"
-            }
-    }
-}
-
-# 3. Les Modules Principaux
-Add-Module -folder "Konnaxion" -title "Konnaxion"
-Add-Module -folder "Orgo" -title "Orgo"
-
-# 4. Section Autres Modules
-$summaryContent += "`n## Autres Modules`n"
-
-Add-Module -folder "SwarmCraft" -title "SwarmCraft"
-Add-Module -folder "Ame-Artificielle" -title "Âme Artificielle"
-Add-Module -folder "Ariane" -title "Ariane"
-Add-Module -folder "abstract-wiki-architect" -title "Architecte Abstrait"
-Add-Module -folder "SenTient" -title "SenTient (Code)"
-Add-Module -folder "tools" -title "Tools"
-
-# 5. Écriture du fichier
-$summaryContent | Out-File -FilePath "SUMMARY.md" -Encoding utf8
-Write-Host "SUMMARY.md mis à jour avec vos titres personnalisés !" -ForegroundColor Green
+* [SwarmCraft](SwarmCraft/Home.md)
+  * [Architecture Overview](SwarmCraft/Architecture-Overview.md)
+  * [Central Matrix (Runtime State)](SwarmCraft/Central-Matrix-(Runtime-State).md)
+  * [Credits & Lineage](SwarmCraft/Credits-&-Lineage.md)
+  * [Dashboard TUI Reference](SwarmCraft/Dashboard-TUI-Reference.md)
+  * [Deterministic Pipeline (SCAN PLAN EXECUTE)](SwarmCraft/Deterministic-Pipeline-(SCAN-PLAN-EXECUTE).md)
+  * [Multi Project Management](SwarmCraft/Multi-Project-Management.md)
+  * [Orchestration Slice by Slice Prompt Hydration](SwarmCraft/Orchestration-Slice-by-Slice-Prompt-Hydration.md)
+  * [Outline Grid CSV Round Trip](SwarmCraft/Outline-Grid-CSV-Round-Trip.md)
+  * [Provider Adapter Grok](SwarmCraft/Provider-Adapter-Grok.md)
+  * [RAG Memory System](SwarmCraft/RAG-Memory-System.md)
+  * [Schema Outline](SwarmCraft/Schema-Outline.md)
+  * [Schema Templates](SwarmCraft/Schema-Templates.md)
+  * [Story Bible (Creative Intent)](SwarmCraft/Story-Bible-(Creative-Intent).md)
+  * [Story Scaffold (Templates Outline Parts)](SwarmCraft/Story-Scaffold-(Templates-Outline-Parts).md)
+* [Artificial Soul](Ame-Artificielle/Home.md)
+  * [CONTROLE_ET_PERSONNALISATION](Ame-Artificielle/CONTROLE_ET_PERSONNALISATION.md)
+  * [CREATION_DE_CHEMINS](Ame-Artificielle/CREATION_DE_CHEMINS.md)
+  * [ETHIQUE_ET_GOUVERNANCE](Ame-Artificielle/ETHIQUE_ET_GOUVERNANCE.md)
+  * [META_COGNITION_ET_RESOLUTION](Ame-Artificielle/META_COGNITION_ET_RESOLUTION.md)
+  * [SPECIFICATIONS_FONCTIONNELLES](Ame-Artificielle/SPECIFICATIONS_FONCTIONNELLES.md)
+* [Ariane](Ariane/Home.md)
+  * [Atlas Core Schema](Ariane/Atlas-Core-Schema.md)
+  * [Atlas Graph Model](Ariane/Atlas-Graph-Model.md)
+  * [Atlas Ontology Vocabulary](Ariane/Atlas-Ontology-Vocabulary.md)
+  * [Atlas](Ariane/Atlas.md)
+  * [Background UI as Data](Ariane/Background-UI-as-Data.md)
+  * [Consumers AI Agent Integration](Ariane/Consumers-AI-Agent-Integration.md)
+  * [Consumers Future Overlay Client](Ariane/Consumers-Future-Overlay-Client.md)
+  * [Consumers](Ariane/Consumers.md)
+  * [Glossary](Ariane/Glossary.md)
+  * [Hybrid Mapping and Human Guided Assistants](Ariane/Hybrid-Mapping-and-Human-Guided-Assistants.md)
+  * [Theseus Drivers](Ariane/Theseus-Drivers.md)
+  * [Theseus Exploration Engine](Ariane/Theseus-Exploration-Engine.md)
+  * [Theseus State Identification](Ariane/Theseus-State-Identification.md)
+  * [Theseus](Ariane/Theseus.md)
+* [Abstract Wiki Architect](abstract-wiki-architect/Home.md)
+* [SenTient (Code)](SenTient/Home.md)
+* [Tools](tools/Home.md)
