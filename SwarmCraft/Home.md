@@ -1,82 +1,52 @@
-# 🐜 SwarmCraft Wiki (v3.0.0)
+# 1. On définit l'entête exact que vous voulez
+$summaryContent = @"
+# Table des matières
 
-> **Architectural Lineage (Upstream Credit):**  
-> SwarmCraft is an **architectural fork and deep rewrite** of the multi-agent swarm engine created by **[Mojomast](https://github.com/mojomast)** in **[mojomast/swarmussy](https://github.com/mojomast/swarmussy)**.  
-> SwarmCraft’s deterministic “Architect-style” layering is also **derived from the meta-structure of Abstract Wiki Architect (AWA)**.  
-> Full lineage details: **[[Credits & Lineage]]**
+* [Accueil (Rejean McCormick)](README.md)
 
-## **POWERED BY GROK** ⚡️
+"@
 
-SwarmCraft is a **data-driven AI story engine** for long-form narrative generation: deterministic orchestration, multi-project isolation, RAG memory for continuity, and a structured story scaffold (templates + outline + parts).
+# 2. Fonction pour générer les liens d'un dossier
+function Add-Module {
+    param ($folder, $title)
+    
+    if (Test-Path $folder) {
+        # Cherche le fichier principal (README.md ou Home.md)
+        $mainFile = ""
+        if (Test-Path "$folder\README.md") { $mainFile = "$folder/README.md" }
+        elseif (Test-Path "$folder\Home.md") { $mainFile = "$folder/Home.md" }
 
----
+        # Ajoute le titre du module (Lien principal)
+        if ($mainFile) {
+            $script:summaryContent += "* [$title]($mainFile)`n"
+        } else {
+            $script:summaryContent += "* [$title]()`n" # Titre sans lien si pas de Home
+        }
 
-## 🧭 Wiki Navigation (Architecture-First)
+        # Ajoute les sous-pages (indalées)
+        Get-ChildItem -Path $folder -Filter *.md | 
+            Where-Object { $_.Name -ne "README.md" -and $_.Name -ne "Home.md" } | 
+            ForEach-Object {
+                $subTitle = $_.BaseName -replace "-", " " # Enlève les tirets pour le titre
+                $script:summaryContent += "  * [$subTitle]($folder/$($_.Name))`n"
+            }
+    }
+}
 
-### Core Architecture
-- **[[Architecture Overview]]**
-- **[[Deterministic Pipeline (SCAN-PLAN-EXECUTE)]]**
-- **[[Central Matrix (Runtime State)]]**
-- **[[Story Bible (Creative Intent)]]**
-- **[[Orchestration Slice-by-Slice Prompt Hydration]]**
+# 3. Les Modules Principaux
+Add-Module -folder "Konnaxion" -title "Konnaxion"
+Add-Module -folder "Orgo" -title "Orgo"
 
-### Story Scaffold (New)
-- **[[Story Scaffold (Templates-Outline-Parts)]]**
-- **[[Schema Templates]]**
-- **[[Schema Outline]]**
-- **[[Outline Grid CSV Round-Trip]]**
+# 4. Section Autres Modules
+$summaryContent += "`n## Autres Modules`n"
 
-### Systems
-- **[[RAG Memory System]]**
-- **[[Multi-Project Management]]**
-- **[[Dashboard TUI Reference]]**
-- **[[Provider Adapter Grok]]**
+Add-Module -folder "SwarmCraft" -title "SwarmCraft"
+Add-Module -folder "Ame-Artificielle" -title "Âme Artificielle"
+Add-Module -folder "Ariane" -title "Ariane"
+Add-Module -folder "abstract-wiki-architect" -title "Architecte Abstrait"
+Add-Module -folder "SenTient" -title "SenTient (Code)"
+Add-Module -folder "tools" -title "Tools"
 
----
-
-## Status
-
-| Component | Status | Note |
-| :--- | :--- | :--- |
-| **Version** | **3.0.0** | SwarmCraft (fork + deep rewrite) |
-| **Architecture** | Active / Stable | Swarmussy foundation + AWA-derived deterministic layering |
-| **Scaffold** | Active | Templates + Outline + Parts |
-| **Memory** | Active | Per-project RAG |
-| **Interface** | TUI | Real-time mission control |
-
----
-
-## What’s New in SwarmCraft (v3.0)
-
-- **AWA-derived deterministic architecture**: decouples **Brain / Logic / Memory** and enforces a strict pipeline.
-- **Parts-based writing**: a *Part* is the atomic unit of drafting/revision; chapters are rollups.
-- **Story Scaffold**: template-defined narrative threads + outline grid for human editing.
-- **Slice-by-slice prompt hydration**: only the active Part slice is injected into the model to reduce repetition.
-- **Multi-project isolation**: each universe has isolated state, configs, and memory.
-- **RAG continuity**: long-term memory retrieval for consistency across 100k+ words.
-
----
-
-## Quick Start (Engine + Monitor)
-
-SwarmCraft runs in two terminals.
-
-### Terminal 1: Engine (Moteur)
-```bash
-python main.py
-````
-
-### Terminal 2: Monitor (Moniteur)
-
-```bash
-python dashboard.py
-```
-
----
-
-## Notes
-
-* Credits are centralized here: **[[Credits & Lineage]]**
-* Grok configuration details: **[[Provider Adapter Grok]]**
-
-
+# 5. Écriture du fichier
+$summaryContent | Out-File -FilePath "SUMMARY.md" -Encoding utf8
+Write-Host "SUMMARY.md mis à jour avec vos titres personnalisés !" -ForegroundColor Green
