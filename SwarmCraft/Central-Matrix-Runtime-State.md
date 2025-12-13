@@ -5,7 +5,7 @@
 > SwarmCraft’s deterministic “Architect-style” layering is also **derived from the meta-structure of Abstract Wiki Architect (AWA)**.  
 > Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
-## **POWERED BY GROK** ⚡️
+## **POWERED BY GROK** 
 
 The **Story Bible** is SwarmCraft’s home for **creative intent**: the canonical narrative plan, constraints, and reference material that guide drafting and revision.
 

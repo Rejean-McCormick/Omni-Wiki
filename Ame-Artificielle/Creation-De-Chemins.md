@@ -20,14 +20,14 @@ Ce module est un outil puissant de visualisation et de gestion qui permet aux ut
 
 ## 3. Forces et Analyse du Module
 
-### 🔭 Visualisation Améliorée
+###  Visualisation Améliorée
 La capacité de visualiser des processus complexes est la force majeure de ce module. Voir comment les éléments s'interconnectent aide les utilisateurs à saisir la "Vue d'ensemble" (Big Picture) tout en gérant les détails. C'est crucial pour les projets ayant de multiples dépendances.
 
-### 🔀 Interactivité et Flexibilité
+###  Interactivité et Flexibilité
 L'interactivité permet aux utilisateurs de s'engager activement avec la carte. Cette flexibilité est essentielle pour les tâches dynamiques comme l'écriture créative ou la planification stratégique, où la capacité d'adapter et de raffiner les plans est nécessaire.
 
-### 🏛️ Structuré mais Créatif
+###  Structuré mais Créatif
 Bien que le module fournisse une approche structurée (le Chemin), il ne limite pas la créativité. La possibilité d'ajouter, de supprimer ou de relier des éléments encourage la pensée latérale et l'expérimentation avec différentes configurations et résultats.
 
-### 🛡️ Aide à la Décision
+###  Aide à la Décision
 Dans des contextes d'affaires ou de stratégie, ce module soutient la prise de décision éclairée en montrant clairement l'impact de chaque élément sur le plan global. Il aide à anticiper les goulots d'étranglement ou à explorer des voies alternatives.

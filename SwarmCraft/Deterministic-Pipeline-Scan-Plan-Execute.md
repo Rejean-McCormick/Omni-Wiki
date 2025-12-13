@@ -5,7 +5,7 @@
 > SwarmCraft’s deterministic “Architect-style” layering is also **derived from the meta-structure of Abstract Wiki Architect (AWA)**.  
 > Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
-## **POWERED BY GROK** ⚡️
+## **POWERED BY GROK** 
 
 SwarmCraft runs a strict, repeatable control loop that transforms explicit project state into prose:
 

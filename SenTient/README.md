@@ -1,4 +1,4 @@
-﻿## 🧠 SenTient (Semantic Entity Intelligent Transformation)
+﻿##  SenTient (Semantic Entity Intelligent Transformation)
 
 **Version:** 1.0.0-RC2
 **Status:** Production Ready (Hybrid Architecture)
@@ -7,7 +7,7 @@
 
 ---
 
-## 1. 🏗️ Executive Summary and Core Philosophy
+## 1.  Executive Summary and Core Philosophy
 
 **SenTient** is a next-generation Entity Reconciliation and Relation Extraction engine designed to bridge the gap between messy, unstructured text and structured Knowledge Graphs (Wikidata/Wikibase).
 
@@ -24,7 +24,7 @@ The core philosophy is a **Hybrid Orchestration System** that combines three dis
 
 ---
 
-## 2. ⚙️ The Three-Layer Funnel and Processing Pipeline
+## 2.  The Three-Layer Funnel and Processing Pipeline
 
 The system operates on a "Funnel" logic: broad and fast at the top, narrow and precise at the bottom. The unit of work is the **SmartCell** object, which acts as the immutable contract across all layers.
 
@@ -58,7 +58,7 @@ The system operates on a "Funnel" logic: broad and fast at the top, narrow and p
 
 ---
 
-## 3. 🛡️ QA, Validation & Benchmarking
+## 3.  QA, Validation & Benchmarking
 
 The QA Strategy relies on three pillars to statistically prove system improvement over time.
 
@@ -88,7 +88,7 @@ The `evaluate_falcon_api.py` script runs the full pipeline.
 
 ---
 
-## 4. 🔗 Data Dictionary: The SmartCell Protocol
+## 4.  Data Dictionary: The SmartCell Protocol
 
 The **SmartCell** is the immutable data contract defined in `schemas/data/smart_cell.json`.
 
@@ -108,7 +108,7 @@ The `Candidate` object contains a `features` object used for UI visualization an
 
 ---
 
-## 5. 🌐 Wiring & Configuration Strategy
+## 5.  Wiring & Configuration Strategy
 
 ### Network Topology (Port Map)
 All services are bound strictly to `127.0.0.1` for security.

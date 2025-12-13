@@ -1,13 +1,13 @@
 ﻿
 
-## 🤖 AI-Assisted Development Workflow Toolkit
+##  AI-Assisted Development Workflow Toolkit
 
 **Component:** Project Analysis, Code Extraction, and LLM Integration
 **Role:** Automates the creation of highly precise, context-rich prompts for Large Language Models (LLMs) and manages the subsequent code re-integration.
 
 ---
 
-## 1. 🏗️ Overview and Methodology
+## 1.  Overview and Methodology
 
 This toolkit is a specialized workflow designed to create a tight feedback loop between a code repository and an external AI service (like ChatGPT) for systematic code analysis and modification. It orchestrates several Python scripts and configuration data to achieve granular control over which parts of the codebase are analyzed and updated.
 
@@ -19,7 +19,7 @@ This toolkit is a specialized workflow designed to create a tight feedback loop 
 
 ---
 
-## 2. 🐍 Core Utility Scripts
+## 2.  Core Utility Scripts
 
 This group of Python scripts performs the essential tasks of path discovery, data extraction, and content modification.
 
@@ -33,7 +33,7 @@ This group of Python scripts performs the essential tasks of path discovery, dat
 
 ---
 
-## 3. 📊 Data Configuration and Mapping
+## 3.  Data Configuration and Mapping
 
 The system's intelligence relies heavily on the structured data provided in these files (exports from `path_blocks_combinedv2.xlsx`), which serve as the configuration layer.
 
@@ -46,7 +46,7 @@ The system's intelligence relies heavily on the structured data provided in thes
 
 ---
 
-## 4. 🔗 Automation and Maintenance
+## 4.  Automation and Maintenance
 
 The workflow is managed by local scripts that handle version control and execution.
 
@@ -54,7 +54,7 @@ The workflow is managed by local scripts that handle version control and executi
 
 ---
 
-## 🚀 Installation and Usage
+##  Installation and Usage
 
 *(Instructions for setting up the Python environment, dependencies, and initial execution would go here, sourced from the local `README.md`.)*
 

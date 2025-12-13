@@ -7,7 +7,7 @@
 > SwarmCraft’s deterministic layering is derived from the meta-structure of **Abstract Wiki Architect (AWA)**.  
 > Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
-## **POWERED BY GROK** ⚡️
+## **POWERED BY GROK** 
 
 The SwarmCraft Dashboard is a **Terminal UI (TUI)** that observes and steers the engine while keeping UI and execution decoupled.
 

@@ -7,19 +7,19 @@ Ce module est conçu pour donner aux utilisateurs un contrôle granulaire sur la
 ## 1. Caractéristiques Binaires (Les Commutateurs)
 Ces options sont des choix "soit/soit" qui modifient radicalement la structure ou le cadre du texte généré.
 
-### 🔹 Temps (Tense)
+###  Temps (Tense)
 Définit le cadre temporel de la narration.
 * **Passé :** Pour les récits historiques, les analyses post-mortem.
 * **Présent :** Pour le journalisme en direct, les instructions, l'état actuel.
 * **Futur :** Pour les plans stratégiques, les prédictions, la science-fiction.
 
-### 🔹 Perspective
+###  Perspective
 Définit qui parle et à qui.
 * **1ère Personne ("Je") :** Subjectif, témoignage, blog personnel.
 * **2ème Personne ("Tu/Vous") :** Directif, guide utilisateur, coaching.
 * **3ème Personne ("Il/Elle/On") :** Objectif, narratif, rapport académique.
 
-### 🔹 Structure Formelle
+###  Structure Formelle
 * **Structurée :** Suit un format rigide (ex: Introduction, Thèse, Antithèse, Conclusion).
 * **Forme Libre :** Flux de conscience, créatif, poétique.
 
@@ -28,36 +28,36 @@ Définit qui parle et à qui.
 ## 2. Caractéristiques Continues (Les Curseurs / Sliders)
 Ces paramètres fonctionnent sur une échelle de gris (0 à 100%), permettant une nuance fine.
 
-### 🎚️ Niveau de Vocabulaire (Vocabulary Level)
+###  Niveau de Vocabulaire (Vocabulary Level)
 Ajuste la densité et la rareté lexicale.
 * **Basique :** Idéal pour les débutants ou la vulgarisation grand public.
 * **Avancé :** Nécessaire pour les audiences expertes, les papiers techniques ou la littérature complexe.
 
-### 🎚️ Objectivité vs Subjectivité
+###  Objectivité vs Subjectivité
 Contrôle le degré d'opinion dans le texte.
 * **100% Objectif :** Faits bruts, neutralité journalistique ou scientifique.
 * **100% Subjectif :** Opinions tranchées, éditoriaux, interprétations personnelles (Simulation de personnalité).
 
-### 🎚️ Humour vs Sérieux
+###  Humour vs Sérieux
 Ajuste la "gravité" du ton.
 * **Sérieux :** Pour les communications légales, médicales ou de crise.
 * **Humoristique/Ludique :** Pour le marketing, l'engagement social ou le divertissement.
 
-### 🎚️ Politesse vs Directivité (Bluntness)
+###  Politesse vs Directivité (Bluntness)
 Gère la distance sociale et la diplomatie.
 * **Poli :** Utilise des formules de courtoisie, des adoucisseurs (service client, diplomatie).
 * **Brut (Blunt) :** Instructions directes, impératives, sans fioritures (code, urgence, commandes militaires).
 
-### 🎚️ Sentiment & Valence
+###  Sentiment & Valence
 Ajuste la charge émotionnelle positive ou négative.
 * **Positif :** Motivation, vente, renforcement, espoir.
 * **Négatif :** Avertissement, scénarios catastrophes, critique sévère.
 
-### 🎚️ Teinte Émotionnelle (Emotional Tint)
+###  Teinte Émotionnelle (Emotional Tint)
 * **Sombre (Dark) :** Mélancolie, mystère, sérieux, thriller.
 * **Lumineux (Light) :** Optimisme, légèreté, comédie.
 
-### 🎚️ Clarté vs Ambiguïté
+###  Clarté vs Ambiguïté
 * **Clair :** Pour les manuels techniques où la précision est vitale.
 * **Ambigu :** Pour la poésie, les oracles, ou l'écriture créative ouverte à l'interprétation.
 

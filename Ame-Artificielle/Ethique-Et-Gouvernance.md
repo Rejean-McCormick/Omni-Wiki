@@ -27,11 +27,11 @@ Ce module est le gardien moral du système. Il garantit que les interactions sur
 
 ## 4. Analyse et Impact
 
-### 🛡️ Confiance et Responsabilité
+###  Confiance et Responsabilité
 Le système de notation transparent et impartial favorise la confiance. Les utilisateurs savent que leurs actions ont un impact direct et juste sur leur statut. La prise de décision éthique garantit que les choix de la plateforme s'alignent sur le bien commun.
 
-### 📈 Renforcement Positif
+###  Renforcement Positif
 En masquant les notes inférieures, le système évite la punition sociale et se concentre sur l'incitation à l'excellence. Les utilisateurs sont motivés à agir éthiquement pour augmenter leur influence, créant un cercle vertueux.
 
-### ⚖️ Médiation Neutre
+###  Médiation Neutre
 L'utilisation des "Clowns" pour la résolution de conflits permet de dépersonnaliser les disputes tout en gardant l'humain au centre. L'IA agit comme un médiateur neutre capable de voir et de défendre simultanément les intérêts de toutes les parties.

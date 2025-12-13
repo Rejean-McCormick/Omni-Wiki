@@ -5,7 +5,7 @@
 > SwarmCraft’s deterministic “Architect-style” layering is also **derived from the meta-structure of Abstract Wiki Architect (AWA)**.  
 > Full details: **[Credits & Lineage](Credits-And-Lineage.md)**
 
-## **POWERED BY GROK** ⚡️
+## **POWERED BY GROK** 
 
 The **Story Scaffold** is SwarmCraft’s structured planning layer used to generate and maintain narrative coherence. It is designed as a **human-editable grid** and a **machine-usable schema**.
 

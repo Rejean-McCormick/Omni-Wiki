@@ -4,7 +4,7 @@ Konnaxion is a socio‑technical framework for coordinating people, knowledge, a
 
 This page is the **hub** for the wiki. It summarizes how modules relate to each other, and it links to detailed pages for each sub‑module. For implementation details (models, services, parameters), use the dedicated technical page linked at the end.
 
-👉 [Visit the Dashboard](https://konnaxion.com/ekoh/dashboard)
+ [Visit the Dashboard](https://konnaxion.com/ekoh/dashboard)
 
 [For an illustrated presentation of the purpose of Konnaxion, the "Knowledge Plateform".](https://kingklown.wiki/)
 
