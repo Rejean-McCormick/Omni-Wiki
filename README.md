@@ -37,7 +37,7 @@ To make Orgo and Konnaxion truly independent, I needed a "language deconstructor
 To make Konnaxion available to all, I needed a way to generate multilingual articles from abstract data. Since no existing solution was ready, I initiated building this architect.
 * **Role:** Structural design and relationship mapping for the wiki ecosystem.
 * **[Wikimedia Tool Page](https://meta.wikimedia.org/w/index.php?title=Abstract_Wikipedia/Tools/abstract-wiki-architect)**
-* [Access *Architect* Technical Wiki](abstract-wiki-architect/Home.md)
+* [Access *Architect* Technical Wiki](abstract-wiki-architect/README.md)
 
 ---
 
