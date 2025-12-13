@@ -30,14 +30,14 @@ To make Orgo and Konnaxion truly independent, I needed a "language deconstructor
 * **The Build:** I merged the best features of **OpenTapioca**, **Falcon**, and **OpenRefine** into a single, streamlined tool.
 * **The Function:** It deconstructs linear human sentences and maps them into structured Wikidata items (concepts).
 * **The Goal:** Enable language-independent data flow within private bubbles (Orgo) or public networks (Konnaxion).
-* 👉 [Read the Docs](SenTient/Home.md)
+* 👉 [Access *SenTient* Technical Wiki](SenTient/Home.md)
 
 ### 🏗️ Abstract Wiki Architect
 **Status:** *Active Development (Open Source)*
 To make Konnaxion available to all, I needed a way to generate multilingual articles from abstract data. Since no existing solution was ready, I initiated building this architect.
 * **Role:** Structural design and relationship mapping for the wiki ecosystem.
 * 🏛️ **[Wikimedia Tool Page](https://meta.wikimedia.org/w/index.php?title=Abstract_Wikipedia/Tools/abstract-wiki-architect)**
-* 👉 [Access Architect Technical Wiki](abstract-wiki-architect/Home.md)
+* 👉 [Access *Architect* Technical Wiki](abstract-wiki-architect/Home.md)
 
 ---
 
@@ -50,13 +50,13 @@ To make Konnaxion available to all, I needed a way to generate multilingual arti
 * **Modules:** KonnectED (Education), keenKonnect (R&D), Ethikos (Governance), Kreative (Culture).
 * 🌐 **[Official Site (konnaxion.com)](https://konnaxion.com)**
 * 🧠 **[Presentation of Konnaxion (formerly "Knowledge Hub") (kingklown.wiki)](https://kingklown.wiki/)**
-* 👉 [Access Konnaxion Technical Wiki](Konnaxion/Home.md)
+* 👉 [Access *Konnaxion* Technical Wiki](Konnaxion/Home.md)
 
 ### 2. Orgo (The Hermetic Bubble)
 * **Mission:** Organize and Go. A multi-tenant nervous system for organizations (gov, business, schools).
 * **Independence:** Designed to operate in a "bubble" (closed network). It uses SenTient to process information locally, ensuring total privacy and speed without data leaks.
 * 📊 **[Presentation of Orgo](https://administrative-efficienc-0u6vhrh.gamma.site/)**
-* 👉 [Access Orgo Technical Wiki](Orgo/Home.md)
+* 👉 [Access *Orgo* Technical Wiki](Orgo/Home.md)
 
 ---
 
@@ -67,17 +67,17 @@ Specific architectural components that handle intelligence and navigation.
 ### 🧭 Ariane (Commercial)
 **Status:** *For Sale / Commercial Licensing*
 The "Thread" and navigation system. Ariane handles graph models and ontology vocabularies (Atlas) to guide users through complex data structures.
-* 👉 [Access Ariane Technical Wiki](Ariane/Home.md)
+* 👉 [Access *Ariane* Technical Wiki](Ariane/Home.md)
 
 ### 🐝 SwarmCraft
 **Status:** *Research / Open Source*
 Managing swarm intelligence and prompt engineering pipelines. Focuses on deterministic execution and slice-by-slice orchestration.
-* 👉 [Read the Docs](SwarmCraft/Home.md)
+* 👉 [Access *SwarmCraft* Technical Wiki](SwarmCraft/Home.md)
 
 ### 👻 Ame-Artificielle (Artificial Soul)
 **Status:** *Research / Open Source*
 Concepts of AI alignment and meta-cognition. Defines ethics, governance, and functional specifications for synthetic souls.
-* 👉 [Access Âme Artificielle Technical Wiki](Ame-Artificielle/Home.md)
+* 👉 [Access *Âme Artificielle* Technical Wiki](Ame-Artificielle/Home.md)
 
 ---
 
