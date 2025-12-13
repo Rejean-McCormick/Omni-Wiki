@@ -1,3 +1,0 @@
-﻿# SenTient
-
-Documentation à venir.
