@@ -36,6 +36,7 @@ To make Orgo and Konnaxion truly independent, I needed a "language deconstructor
 **Status:** *Active Development (Open Source)*
 To make Konnaxion available to all, I needed a way to generate multilingual articles from abstract data. Since no existing solution was ready, I initiated building this architect.
 * **Role:** Structural design and relationship mapping for the wiki ecosystem.
+* 🏛️ **[Wikimedia Tool Page](https://meta.wikimedia.org/w/index.php?title=Abstract_Wikipedia/Tools/abstract-wiki-architect)**
 * 👉 [Read the Docs](abstract-wiki-architect/README.md)
 
 ---
@@ -47,11 +48,14 @@ To make Konnaxion available to all, I needed a way to generate multilingual arti
 ### 1. Konnaxion (The Open Web)
 * **Mission:** Connect everyone. Stitches together existing OER catalogs and civic tools rather than rebuilding them.
 * **Modules:** KonnectED (Education), keenKonnect (R&D), Ethikos (Governance), Kreative (Culture).
+* 🌐 **[Official Site (konnaxion.com)](https://konnaxion.com)**
+* 🧠 **[Knowledge Hub (kingklown.wiki)](https://kingklown.wiki/)**
 * 👉 [Access Konnaxion Technical Wiki](Konnaxion/README.md)
 
 ### 2. Orgo (The Hermetic Bubble)
 * **Mission:** Organize and Go. A multi-tenant nervous system for organizations (gov, business, schools).
 * **Independence:** Designed to operate in a "bubble" (closed network). It uses SenTient to process information locally, ensuring total privacy and speed without data leaks.
+* 📊 **[Overview Presentation (Gamma)](https://administrative-efficienc-0u6vhrh.gamma.site/)**
 * 👉 [Access Orgo Technical Wiki](Orgo/README.md)
 
 ---
