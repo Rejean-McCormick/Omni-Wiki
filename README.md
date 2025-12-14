@@ -88,9 +88,9 @@ Concepts of AI alignment and meta-cognition. Defines ethics, governance, and fun
 
 To make these systemic ideas legible and engaging, I utilize a narrative engine around **King Klown** and **Surreal**.
 
-* **Fiction Cycles:** *King Klown Kronicles* (Amazon).
-* **Media:** Podcasts, audiobooks, and soundscapes (YouTube).
-* **Stage Work:** *Le Ninja Arc-en-ciel*.
+* **Fiction Cycles:** *King Klown Kronicles* ([Amazon](https://www.amazon.ca/stores/R%C3%A9jean-McCormick/author/B0G3B7DQWG?ref=ap_rdr&shoppingPortalEnabled=true)).
+* **Media:** Podcasts, audiobooks, and soundscapes ([Spotify](https://open.spotify.com/show/2hMamhJENVfWsULSuUVEG4)).
+* **Stage Work:** *Le Ninja Arc-en-ciel* ([Watch on YouTube](https://www.youtube.com/watch?v=Cz7qhJNDzuo) | [Listen on SoundCloud](https://soundcloud.com/rejean-mccormick/sets/ninja_arc-en-ciel)).
 
 ---
 
