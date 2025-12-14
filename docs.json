@@ -3,10 +3,10 @@
   "name": "Omni-Wiki",
   "theme": "mint",
   "logo": {
-    "light": "/logo.png",
-    "dark": "/logo.png"
+    "light": "/LogoK.svg",
+    "dark": "/LogoK.svg"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/LogoK.svg",
   "colors": {
     "primary": "#1e6864",
     "light": "#daa520",
