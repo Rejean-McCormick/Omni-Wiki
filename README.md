@@ -1,7 +1,4 @@
-﻿Here is the updated **Home Page** with the requested additions. I have integrated the new details about Orgo's disconnection capabilities (privacy, resilience, security) and SenTient's role as the secure gateway and efficiency engine.
-
-```markdown
-# Réjean McCormick
+﻿# Réjean McCormick
 ### Socio-technical Architect
 
 I design and ship civic utilities: shared infrastructure that helps people learn, coordinate, and govern together.
@@ -105,4 +102,3 @@ To make these systemic ideas legible and engaging, I utilize a narrative engine 
 * **Facebook:** [Profile](https://www.facebook.com/profile.php?id=61559861434513)
 * **X (Twitter):** [@KingKlownXYZ](https://x.com/KingKlownXYZ)
 * **Mastodon:** [@Rejean_McCormick](https://mastodon.social/@Rejean_McCormick)
-```
