@@ -1,102 +1,193 @@
 import os
+import json
 
-# This dictionary defines how files were moved. 
-# It maps the OLD filename to the NEW relative path from the module root.
-# Example: "Knowledge.md" is now in "KonnectED/Knowledge.md"
-MOVES = {
-    # Konnaxion moves
-    "Knowledge.md": "KonnectED/Knowledge.md",
-    "CertifiKation.md": "KonnectED/CertifiKation.md",
-    "Korum.md": "Ethikos/Korum.md",
-    "Konsultations.md": "Ethikos/Konsultations.md",
-    "Konservation.md": "Kreative/Konservation.md",
-    "Kontact.md": "Kreative/Kontact.md",
-    "Konstruct.md": "keenKonnect/Konstruct.md",
-    "Stockage.md": "keenKonnect/Stockage.md",
-    "EkoH.md": "Kollective-Intelligence/EkoH.md",
-    "Smart-Vote.md": "Kollective-Intelligence/Smart-Vote.md",
-    "Konnaxion-Technical-Architecture-And-Services.md": "Technical/Konnaxion-Technical-Architecture-And-Services.md",
-    
-    # SwarmCraft moves
-    "Architecture-Overview.md": "Core/Architecture-Overview.md",
-    "Central-Matrix-Runtime-State.md": "Core/Central-Matrix-Runtime-State.md",
-    "Deterministic-Pipeline-Scan-Plan-Execute.md": "Core/Deterministic-Pipeline-Scan-Plan-Execute.md",
-    "Story-Bible-Creative-Intent.md": "Scaffold/Story-Bible-Creative-Intent.md",
-    "Story-Scaffold-Templates-Outline-Parts.md": "Scaffold/Story-Scaffold-Templates-Outline-Parts.md",
-    "Schema-Templates.md": "Scaffold/Schema-Templates.md",
-    "Schema-Outline.md": "Scaffold/Schema-Outline.md",
-    "Outline-Grid-CSV-Round-Trip.md": "Scaffold/Outline-Grid-CSV-Round-Trip.md",
-    "Orchestration-Slice-By-Slice-Prompt-Hydration.md": "Runtime/Orchestration-Slice-By-Slice-Prompt-Hydration.md",
-    "Multi-Project-Management.md": "Runtime/Multi-Project-Management.md",
-    "RAG-Memory-System.md": "Runtime/RAG-Memory-System.md",
-    "Provider-Adapter-Grok.md": "Runtime/Provider-Adapter-Grok.md",
-    "Dashboard-TUI-Reference.md": "Runtime/Dashboard-TUI-Reference.md",
-    "Credits-And-Lineage.md": "Meta/Credits-And-Lineage.md",
-
-    # Ariane moves
-    "Atlas.md": "Atlas/Atlas.md",
-    "Atlas-Core-Schema.md": "Atlas/Atlas-Core-Schema.md",
-    "Atlas-Graph-Model.md": "Atlas/Atlas-Graph-Model.md",
-    "Atlas-Ontology-Vocabulary.md": "Atlas/Atlas-Ontology-Vocabulary.md",
-    "Theseus.md": "Theseus/Theseus.md",
-    "Theseus-Drivers.md": "Theseus/Theseus-Drivers.md",
-    "Theseus-Exploration-Engine.md": "Theseus/Theseus-Exploration-Engine.md",
-    "Theseus-State-Identification.md": "Theseus/Theseus-State-Identification.md",
-    "Consumers.md": "Consumers/Consumers.md",
-    "Consumers-AI-Agent-Integration.md": "Consumers/Consumers-AI-Agent-Integration.md",
-    "Consumers-Future-Overlay-Client.md": "Consumers/Consumers-Future-Overlay-Client.md",
-    "Hybrid-Mapping-and-Human-Guided-Assistants.md": "Consumers/Hybrid-Mapping-and-Human-Guided-Assistants.md",
-    "Background-UI-as-Data.md": "Concepts/Background-UI-as-Data.md",
-    "Glossary.md": "Concepts/Glossary.md"
+# 1. Define the renames (Folder, OldName -> NewName)
+renames = {
+    "tools": ("README.md", "Dev-Workflow-Hub.md"),
+    "SenTient": ("README.md", "SenTient-Engine-Hub.md"),
+    "abstract-wiki-architect": ("README.md", "Wiki-Architect-Hub.md"),
+    "Orgo": ("README.md", "Orgo-System-Hub.md"),
+    "Ariane": ("README.md", "Ariane-Hub.md"),
+    "Ame-Artificielle": ("README.md", "Ame-Vision-Hub.md"),
+    "SwarmCraft": ("README.md", "SwarmCraft-Hub.md"),
+    "Konnaxion": ("README.md", "Konnaxion-Hub.md"),
 }
 
-def update_links_in_file(filepath):
-    try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            content = f.read()
+def rename_files():
+    print("--- Renaming Files to '-Hub' ---")
+    for folder, (old, new) in renames.items():
+        old_path = os.path.join(folder, old)
+        new_path = os.path.join(folder, new)
         
-        new_content = content
-        changes = 0
-        
-        # Simple string replacement for links
-        # This looks for patterns like [Label](OldFile.md) and replaces with [Label](NewSubfolder/OldFile.md)
-        for old_file, new_path in MOVES.items():
-            
-            # CASE 1: Updating links inside a ROOT README (e.g. Konnaxion/README.md)
-            # Link was [Link](Knowledge.md), now needs to be [Link](KonnectED/Knowledge.md)
-            if f"({old_file})" in new_content:
-                new_content = new_content.replace(f"({old_file})", f"({new_path})")
-                changes += 1
+        # Check if the OLD file exists to rename it
+        if os.path.exists(old_path):
+            try:
+                os.rename(old_path, new_path)
+                print(f"✅ Renamed: {old_path} -> {new_path}")
+            except Exception as e:
+                print(f"❌ Error renaming {old_path}: {e}")
+        # Check if it was ALREADY renamed (idempotency)
+        elif os.path.exists(new_path):
+            print(f"ℹ️  Already renamed: {new_path}")
+        else:
+            print(f"⚠️  Source file not found: {old_path}")
 
-            # CASE 2: Updating links inside MOVED files
-            # If we are inside KonnectED/Knowledge.md and we link to CertifiKation.md
-            # They are siblings now, so (CertifiKation.md) is actually still valid IF they moved to the same folder.
-            # But if they moved to DIFFERENT folders, we'd need ../ logic. 
-            # For this script, we focus on fixing the Hub/README pages which are most critical.
-
-        if changes > 0:
-            with open(filepath, 'w', encoding='utf-8') as f:
-                f.write(new_content)
-            print(f"✅ Fixed {changes} links in {filepath}")
-
-    except Exception as e:
-        print(f"❌ Error processing {filepath}: {e}")
-
-def main():
-    # Scan only the main module READMEs, as they act as the "Hubs" and contain the most links
-    target_files = [
-        "Konnaxion/README.md",
-        "SwarmCraft/README.md",
-        "Ariane/README.md",
-        "SUMMARY.md" 
+def update_json():
+    print("\n--- Generating new docs.json ---")
+    
+    new_nav = [
+        {
+            "group": "Introduction",
+            "pages": ["index"]
+        },
+        {
+            "group": "Konnaxion",
+            "pages": [
+                "Konnaxion/Konnaxion-Hub",
+                {
+                    "group": "KonnectED (Education)",
+                    "pages": ["Konnaxion/KonnectED/Knowledge", "Konnaxion/KonnectED/CertifiKation"]
+                },
+                {
+                    "group": "Ethikos (Governance)",
+                    "pages": ["Konnaxion/Ethikos/Korum", "Konnaxion/Ethikos/Konsultations"]
+                },
+                {
+                    "group": "Kreative (Culture)",
+                    "pages": ["Konnaxion/Kreative/Konservation", "Konnaxion/Kreative/Kontact"]
+                },
+                {
+                    "group": "keenKonnect (R&D)",
+                    "pages": ["Konnaxion/keenKonnect/Konstruct", "Konnaxion/keenKonnect/Stockage"]
+                },
+                {
+                    "group": "Kollective Intelligence",
+                    "pages": ["Konnaxion/Kollective-Intelligence/EkoH", "Konnaxion/Kollective-Intelligence/Smart-Vote"]
+                },
+                {
+                    "group": "Technical",
+                    "pages": ["Konnaxion/Technical/Konnaxion-Technical-Architecture-And-Services"]
+                }
+            ]
+        },
+        {
+            "group": "SwarmCraft",
+            "pages": [
+                "SwarmCraft/SwarmCraft-Hub",
+                {
+                    "group": "Core Logic",
+                    "pages": [
+                        "SwarmCraft/Core/Architecture-Overview",
+                        "SwarmCraft/Core/Deterministic-Pipeline-Scan-Plan-Execute",
+                        "SwarmCraft/Core/Central-Matrix-Runtime-State"
+                    ]
+                },
+                {
+                    "group": "Story Scaffold",
+                    "pages": [
+                        "SwarmCraft/Scaffold/Story-Scaffold-Templates-Outline-Parts",
+                        "SwarmCraft/Scaffold/Story-Bible-Creative-Intent",
+                        "SwarmCraft/Scaffold/Schema-Templates",
+                        "SwarmCraft/Scaffold/Schema-Outline",
+                        "SwarmCraft/Scaffold/Outline-Grid-CSV-Round-Trip"
+                    ]
+                },
+                {
+                    "group": "Runtime & Tools",
+                    "pages": [
+                        "SwarmCraft/Runtime/Orchestration-Slice-By-Slice-Prompt-Hydration",
+                        "SwarmCraft/Runtime/Multi-Project-Management",
+                        "SwarmCraft/Runtime/RAG-Memory-System",
+                        "SwarmCraft/Runtime/Provider-Adapter-Grok",
+                        "SwarmCraft/Runtime/Dashboard-TUI-Reference"
+                    ]
+                },
+                "SwarmCraft/Meta/Credits-And-Lineage"
+            ]
+        },
+        {
+            "group": "Ariane",
+            "pages": [
+                "Ariane/Ariane-Hub",
+                {
+                    "group": "Atlas (The Map)",
+                    "pages": [
+                        "Ariane/Atlas/Atlas",
+                        "Ariane/Atlas/Atlas-Graph-Model",
+                        "Ariane/Atlas/Atlas-Core-Schema",
+                        "Ariane/Atlas/Atlas-Ontology-Vocabulary"
+                    ]
+                },
+                {
+                    "group": "Theseus (The Explorer)",
+                    "pages": [
+                        "Ariane/Theseus/Theseus",
+                        "Ariane/Theseus/Theseus-Drivers",
+                        "Ariane/Theseus/Theseus-Exploration-Engine",
+                        "Ariane/Theseus/Theseus-State-Identification"
+                    ]
+                },
+                {
+                    "group": "Consumers",
+                    "pages": [
+                        "Ariane/Consumers/Consumers",
+                        "Ariane/Consumers/Consumers-AI-Agent-Integration",
+                        "Ariane/Consumers/Consumers-Future-Overlay-Client",
+                        "Ariane/Consumers/Hybrid-Mapping-and-Human-Guided-Assistants"
+                    ]
+                },
+                {
+                    "group": "Concepts",
+                    "pages": [
+                        "Ariane/Concepts/Background-UI-as-Data",
+                        "Ariane/Concepts/Glossary"
+                    ]
+                }
+            ]
+        },
+        {
+            "group": "Orgo",
+            "pages": ["Orgo/Orgo-System-Hub"]
+        },
+        {
+            "group": "Âme Artificielle",
+            "pages": [
+                "Ame-Artificielle/Ame-Vision-Hub",
+                "Ame-Artificielle/Controle-Et-Personnalisation",
+                "Ame-Artificielle/Creation-De-Chemins",
+                "Ame-Artificielle/Ethique-Et-Gouvernance",
+                "Ame-Artificielle/Meta-Cognition-Et-Resolution",
+                "Ame-Artificielle/Specifications-Fonctionnelles"
+            ]
+        },
+        {
+            "group": "Outils & Code",
+            "pages": [
+                "tools/Dev-Workflow-Hub",
+                "SenTient/SenTient-Engine-Hub",
+                "abstract-wiki-architect/Wiki-Architect-Hub"
+            ]
+        }
     ]
 
-    print("--- Fixing Links in Hub Pages ---")
-    for tf in target_files:
-        if os.path.exists(tf):
-            update_links_in_file(tf)
-        else:
-            print(f"Skipping {tf} (not found)")
+    try:
+        with open("docs.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        print("⚠️ docs.json not found, creating new one.")
+        data = {
+            "$schema": "https://mintlify.com/docs.json",
+            "name": "Omni-Wiki",
+            "theme": "mint",
+            "topbarLinks": [{"name": "GitHub", "url": "https://github.com/Rejean-McCormick/Omni-Wiki"}]
+        }
+
+    data["navigation"] = {"tabs": [{"tab": "Wiki", "groups": new_nav}]}
+
+    with open("docs.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+    print("✅ docs.json updated.")
 
 if __name__ == "__main__":
-    main()
+    rename_files()
+    update_json()

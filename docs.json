@@ -32,7 +32,7 @@
           {
             "group": "Konnaxion",
             "pages": [
-              "Konnaxion/README",
+              "Konnaxion/Konnaxion-Hub",
               {
                 "group": "KonnectED (Education)",
                 "pages": [
@@ -79,7 +79,7 @@
           {
             "group": "SwarmCraft",
             "pages": [
-              "SwarmCraft/README",
+              "SwarmCraft/SwarmCraft-Hub",
               {
                 "group": "Core Logic",
                 "pages": [
@@ -114,7 +114,7 @@
           {
             "group": "Ariane",
             "pages": [
-              "Ariane/README",
+              "Ariane/Ariane-Hub",
               {
                 "group": "Atlas (The Map)",
                 "pages": [
@@ -154,13 +154,13 @@
           {
             "group": "Orgo",
             "pages": [
-              "Orgo/README"
+              "Orgo/Orgo-System-Hub"
             ]
           },
           {
-            "group": "Âme Artificielle",
+            "group": "\u00c2me Artificielle",
             "pages": [
-              "Ame-Artificielle/README",
+              "Ame-Artificielle/Ame-Vision-Hub",
               "Ame-Artificielle/Controle-Et-Personnalisation",
               "Ame-Artificielle/Creation-De-Chemins",
               "Ame-Artificielle/Ethique-Et-Gouvernance",
@@ -171,9 +171,9 @@
           {
             "group": "Outils & Code",
             "pages": [
-              "tools/README",
-              "SenTient/README",
-              "abstract-wiki-architect/README"
+              "tools/Dev-Workflow-Hub",
+              "SenTient/SenTient-Engine-Hub",
+              "abstract-wiki-architect/Wiki-Architect-Hub"
             ]
           }
         ]
