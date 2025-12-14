@@ -171,7 +171,9 @@
           {
             "group": "Outils & Code",
             "pages": [
-              "tools/README"
+              "tools/README",
+              "SenTient/README",
+              "abstract-wiki-architect/README"
             ]
           }
         ]
