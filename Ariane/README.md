@@ -46,11 +46,11 @@ Theseus supports:
 - **Human-guided recording** where a human operator performs actions and Theseus records the resulting states and transitions as data. <!-- cite: 518 -->
 
 See:
-- [Theseus](Theseus.md)
-- [Theseus: Drivers](Theseus-Drivers.md)
-- [Theseus: State Identification](Theseus-State-Identification.md)
-- [Theseus: Exploration Engine](Theseus-Exploration-Engine.md)
-- [Hybrid Mapping and Human-Guided Assistants](Hybrid-Mapping-and-Human-Guided-Assistants.md)
+- [Theseus](Theseus/Theseus.md)
+- [Theseus: Drivers](Theseus/Theseus-Drivers.md)
+- [Theseus: State Identification](Theseus/Theseus-State-Identification.md)
+- [Theseus: Exploration Engine](Theseus/Theseus-Exploration-Engine.md)
+- [Hybrid Mapping and Human-Guided Assistants](Consumers/Hybrid-Mapping-and-Human-Guided-Assistants.md)
 
 ### Atlas (UI Graph and Ontology)
 
@@ -68,10 +68,10 @@ It provides:
 External systems query Atlas to understand what actions are possible from a given state and which sequences achieve a given intent. <!-- cite: 523 -->
 
 See:
-- [Atlas](Atlas.md)
-- [Atlas: Graph Model](Atlas-Graph-Model.md)
-- [Atlas: Core Schema](Atlas-Core-Schema.md)
-- [Atlas: Ontology Vocabulary](Atlas-Ontology-Vocabulary.md)
+- [Atlas](Atlas/Atlas.md)
+- [Atlas: Graph Model](Atlas/Atlas-Graph-Model.md)
+- [Atlas: Core Schema](Atlas/Atlas-Core-Schema.md)
+- [Atlas: Ontology Vocabulary](Atlas/Atlas-Ontology-Vocabulary.md)
 
 ---
 
@@ -83,14 +83,14 @@ Ariane is designed as a data source. Typical consumers include: <!-- cite: 524 -
 - **Automation tools** that want a declarative description of UI workflows. <!-- cite: 526 -->
 - **Analysis tools** that reason about UI complexity, accessibility, or consistency. <!-- cite: 527 -->
 - **Human assistants / operator consoles** that provide step-by-step textual guidance to users or operators, using Atlas as the underlying reference graph. <!-- cite: 528 -->
-  - See: [Hybrid Mapping and Human-Guided Assistants](Hybrid-Mapping-and-Human-Guided-Assistants.md)
+  - See: [Hybrid Mapping and Human-Guided Assistants](Consumers/Hybrid-Mapping-and-Human-Guided-Assistants.md)
 
 A future, optional overlay-style client could be built on top of Ariane as one specific consumer, but it is not part of the core scope. <!-- cite: 529 -->
 
 See:
-- [Consumers](Consumers.md)
-- [Consumers: AI Agent Integration](Consumers-AI-Agent-Integration.md)
-- [Consumers: Future Overlay Client](Consumers-Future-Overlay-Client.md)
+- [Consumers](Consumers/Consumers.md)
+- [Consumers: AI Agent Integration](Consumers/Consumers-AI-Agent-Integration.md)
+- [Consumers: Future Overlay Client](Consumers/Consumers-Future-Overlay-Client.md)
 
 ---
 
@@ -116,9 +116,9 @@ See:
 
 ## Navigation
 
-- [Background: UI as Data](Background-UI-as-Data.md) — context and motivation (“procedural knowledge gap”). <!-- cite: 535 -->
-- [Theseus](Theseus.md) — exploration engine architecture and behavior.
-- [Atlas](Atlas.md) — UI graph model and semantic schema. <!-- cite: 536 -->
-- [Hybrid Mapping and Human-Guided Assistants](Hybrid-Mapping-and-Human-Guided-Assistants.md) — hybrid exploration and human-in-the-loop patterns.
-- [Consumers](Consumers.md) — how external systems use Ariane’s data. <!-- cite: 537 -->
-- [Glossary](Glossary.md) — definitions of key terms.
+- [Background: UI as Data](Concepts/Background-UI-as-Data.md) — context and motivation (“procedural knowledge gap”). <!-- cite: 535 -->
+- [Theseus](Theseus/Theseus.md) — exploration engine architecture and behavior.
+- [Atlas](Atlas/Atlas.md) — UI graph model and semantic schema. <!-- cite: 536 -->
+- [Hybrid Mapping and Human-Guided Assistants](Consumers/Hybrid-Mapping-and-Human-Guided-Assistants.md) — hybrid exploration and human-in-the-loop patterns.
+- [Consumers](Consumers/Consumers.md) — how external systems use Ariane’s data. <!-- cite: 537 -->
+- [Glossary](Concepts/Glossary.md) — definitions of key terms.

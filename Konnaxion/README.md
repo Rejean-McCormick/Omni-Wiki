@@ -18,28 +18,28 @@ Overall structure:
 
 ### KonnectED
 
-* [Knowledge](Knowledge.md) — Collaborative Learning Library: catalog, recommendations, co‑creation, forums, progress tracking.
-* [CertifiKation](CertifiKation.md) — Skills & Certification: paths, evaluations, peer validation, portfolios, credentials.
+* [Knowledge](KonnectED/Knowledge.md) — Collaborative Learning Library: catalog, recommendations, co‑creation, forums, progress tracking.
+* [CertifiKation](KonnectED/CertifiKation.md) — Skills & Certification: paths, evaluations, peer validation, portfolios, credentials.
 
 ### Ethikos
 
-* [Korum](Korum.md) — Structured Debates: topics, −3…+3 stances, threaded arguments, expert cohorts, summaries.
-* [Konsultations](Konsultations.md) — Public Consultations & Feedback: time‑boxed consultations, citizen suggestions, weighted ballots, impact tracking.
+* [Korum](Ethikos/Korum.md) — Structured Debates: topics, −3…+3 stances, threaded arguments, expert cohorts, summaries.
+* [Konsultations](Ethikos/Konsultations.md) — Public Consultations & Feedback: time‑boxed consultations, citizen suggestions, weighted ballots, impact tracking.
 
 ### Kreative
 
-* [Konservation](Konservation.md) — Creative Content & Cultural Preservation: digital archives, virtual exhibitions, AI‑enriched catalog, partner collections.
-* [Kontact](Kontact.md) — Collaboration & Networking: profiles, intelligent matching, collaboration rooms, opportunities, endorsements.
+* [Konservation](Kreative/Konservation.md) — Creative Content & Cultural Preservation: digital archives, virtual exhibitions, AI‑enriched catalog, partner collections.
+* [Kontact](Kreative/Kontact.md) — Collaboration & Networking: profiles, intelligent matching, collaboration rooms, opportunities, endorsements.
 
 ### keenKonnect
 
-* [Konstruct](Konstruct.md) — Project Collaboration Spaces: project workspaces, tasks, chat, AI insights, project ratings.
-* [Stockage](Stockage.md) — Secure Repository & Versioned Storage: document/blueprint storage, versioning, indexing, real‑time sync.
+* [Konstruct](keenKonnect/Konstruct.md) — Project Collaboration Spaces: project workspaces, tasks, chat, AI insights, project ratings.
+* [Stockage](keenKonnect/Stockage.md) — Secure Repository & Versioned Storage: document/blueprint storage, versioning, indexing, real‑time sync.
 
 ### Kollective Intelligence
 
-* [EkoH](EkoH.md) — Reputation & Expertise: multidimensional scoring, ethical multipliers, privacy controls, audit trails.
-* [Smart Vote](Smart-Vote.md) — Weighted Voting System: EkoH‑weighted voting, multiple modalities, emerging‑expert detection, analytics.
+* [EkoH](Kollective-Intelligence/EkoH.md) — Reputation & Expertise: multidimensional scoring, ethical multipliers, privacy controls, audit trails.
+* [Smart Vote](Kollective-Intelligence/Smart-Vote.md) — Weighted Voting System: EkoH‑weighted voting, multiple modalities, emerging‑expert detection, analytics.
 
 Use this section as the navigation menu for the wiki: start from the KOA area you care about, then dive into its sub‑module page for details.
 
@@ -51,19 +51,19 @@ The README outlines a civic workflow “proposal → deliberation → decision �
 The KOA modules map onto that pipeline as follows:
 
 1. **Learn & build competence – KonnectED**
-   People explore resources and courses in **[Knowledge](Knowledge.md)**, then earn certifications through **[CertifiKation](CertifiKation.md)**, building skills and portfolios.
+   People explore resources and courses in **[Knowledge](KonnectED/Knowledge.md)**, then earn certifications through **[CertifiKation](KonnectED/CertifiKation.md)**, building skills and portfolios.
 
 2. **Deliberate & consult – Ethikos**
-   Complex issues are debated in **[Korum](Korum.md)** with nuanced stances and arguments, while broader participation is organized via **[Konsultations](Konsultations.md)** for structured public input.
+   Complex issues are debated in **[Korum](Ethikos/Korum.md)** with nuanced stances and arguments, while broader participation is organized via **[Konsultations](Ethikos/Konsultations.md)** for structured public input.
 
 3. **Weigh & decide – Kollective Intelligence**
-   **[EkoH](EkoH.md)** computes domain‑specific reputation and ethics scores; **[Smart Vote](Smart-Vote.md)** uses them to weight ballots and stances, exposing both raw and weighted outcomes.
+   **[EkoH](Kollective-Intelligence/EkoH.md)** computes domain‑specific reputation and ethics scores; **[Smart Vote](Kollective-Intelligence/Smart-Vote.md)** uses them to weight ballots and stances, exposing both raw and weighted outcomes.
 
 4. **Execute & coordinate – keenKonnect**
-   Adopted proposals become projects in **[Konstruct](Konstruct.md)**, with tasks, chat, and AI summaries, while **[Stockage](Stockage.md)** manages all related documents and blueprints.
+   Adopted proposals become projects in **[Konstruct](keenKonnect/Konstruct.md)**, with tasks, chat, and AI summaries, while **[Stockage](keenKonnect/Stockage.md)** manages all related documents and blueprints.
 
 5. **Preserve & connect – Kreative**
-   Outputs are archived and exhibited through **[Konservation](Konservation.md)**, and relationships and opportunities are managed via **[Kontact](Kontact.md)**, feeding back into future cycles of work.
+   Outputs are archived and exhibited through **[Konservation](Kreative/Konservation.md)**, and relationships and opportunities are managed via **[Kontact](Kreative/Kontact.md)**, feeding back into future cycles of work.
 
 ---
 
@@ -77,6 +77,6 @@ For details about:
 
 see the dedicated technical page:
 
-* [Konnaxion – Technical Architecture & Services](Konnaxion-Technical-Architecture-And-Services.md)
+* [Konnaxion – Technical Architecture & Services](Technical/Konnaxion-Technical-Architecture-And-Services.md)
 
 That page consolidates the “technicalities” from the module specifications and the original system‑overview draft, so this hub can stay focused on workflows and navigation.

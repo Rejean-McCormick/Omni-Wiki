@@ -31,25 +31,25 @@ SwarmCraft replaces emergent coordination with a strict cycle:
 
 ### Core Logic & Orchestration
 
-* [**Architecture Overview**](Architecture-Overview.md) – High-level diagram of the Brain/Logic/Memory separation.
-* [**Deterministic Pipeline**](Deterministic-Pipeline-Scan-Plan-Execute.md) – Detailed breakdown of the SCAN-PLAN-EXECUTE control loop.
-* [**Prompt Hydration**](Orchestration-Slice-By-Slice-Prompt-Hydration.md) – How the engine prevents "prompt sprawl" by injecting only the active Part slice.
-* [**Provider Adapter: Grok**](Provider-Adapter-Grok.md) – The normalization layer that keeps the engine model-agnostic.
+* [**Architecture Overview**](Core/Architecture-Overview.md) – High-level diagram of the Brain/Logic/Memory separation.
+* [**Deterministic Pipeline**](Core/Deterministic-Pipeline-Scan-Plan-Execute.md) – Detailed breakdown of the SCAN-PLAN-EXECUTE control loop.
+* [**Prompt Hydration**](Runtime/Orchestration-Slice-By-Slice-Prompt-Hydration.md) – How the engine prevents "prompt sprawl" by injecting only the active Part slice.
+* [**Provider Adapter: Grok**](Runtime/Provider-Adapter-Grok.md) – The normalization layer that keeps the engine model-agnostic.
 
 ### State & Schema (The Truth)
 
-* [**Central Matrix**](Central-Matrix-Runtime-State.md) – The machine-readable runtime state (`matrix.json`).
-* [**Story Bible (Intent)**](Story-Bible-Creative-Intent.md) – Where characters, lore, and constraints live.
-* [**Story Scaffold**](Story-Scaffold-Templates-Outline-Parts.md) – The grid system combining Templates and Outlines.
-* [**Schema: Templates**](Schema-Templates.md) – Defining thread sets and pacing rules.
-* [**Schema: Outline**](Schema-Outline.md) – Defining chapters, parts, and beat contracts.
+* [**Central Matrix**](Core/Central-Matrix-Runtime-State.md) – The machine-readable runtime state (`matrix.json`).
+* [**Story Bible (Intent)**](Scaffold/Story-Bible-Creative-Intent.md) – Where characters, lore, and constraints live.
+* [**Story Scaffold**](Scaffold/Story-Scaffold-Templates-Outline-Parts.md) – The grid system combining Templates and Outlines.
+* [**Schema: Templates**](Scaffold/Schema-Templates.md) – Defining thread sets and pacing rules.
+* [**Schema: Outline**](Scaffold/Schema-Outline.md) – Defining chapters, parts, and beat contracts.
 
 ### Operations & Usage
 
-* [**Dashboard TUI**](Dashboard-TUI-Reference.md) – The "Mission Control" interface for observing the engine.
-* [**Multi-Project Management**](Multi-Project-Management.md) – Running isolated universes in a single runtime.
-* [**Outline Grid & CSV**](Outline-Grid-CSV-Round-Trip.md) – Round-tripping the story structure via spreadsheets.
-* [**RAG Memory System**](RAG-Memory-System.md) – Long-term retrieval for narrative continuity.
+* [**Dashboard TUI**](Runtime/Dashboard-TUI-Reference.md) – The "Mission Control" interface for observing the engine.
+* [**Multi-Project Management**](Runtime/Multi-Project-Management.md) – Running isolated universes in a single runtime.
+* [**Outline Grid & CSV**](Scaffold/Outline-Grid-CSV-Round-Trip.md) – Round-tripping the story structure via spreadsheets.
+* [**RAG Memory System**](Runtime/RAG-Memory-System.md) – Long-term retrieval for narrative continuity.
 
 ---
 
@@ -64,4 +64,4 @@ The engine never dumps the whole Story Bible into the LLM. It hydrates prompts w
 ### Credits & Lineage
 * **Upstream Foundation:** Mojomast/swarmussy (Multi-agent patterns, TUI concepts).
 * **Meta-Structure:** Abstract Wiki Architect (State separation).
-* **Full Credits:** [**Read the Credits & Lineage Page**](Credits-And-Lineage.md).
+* **Full Credits:** [**Read the Credits & Lineage Page**](Meta/Credits-And-Lineage.md).

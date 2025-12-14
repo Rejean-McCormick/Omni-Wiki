@@ -7,10 +7,11 @@
     "dark": "/LogoK.svg"
   },
   "favicon": "/LogoK.svg",
-  "colors": {
+"colors": {
     "primary": "#1e6864",
-    "light": "#daa520",
-    "dark": "#154a47"
+    "light": "#1e6864",
+    "dark": "#daa520"
+
   },
   "topbarLinks": [
     {
