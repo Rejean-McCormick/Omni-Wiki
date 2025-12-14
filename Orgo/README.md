@@ -1,22 +1,23 @@
 # Orgo System Overview
 
-This document provides a conceptual and technical map of the Orgo platform. It details how the system functions as a multi-tenant "nervous system" for organizations, distinct from standard ticketing systems or CRMs.
+This document provides a conceptual and technical map of the Orgo platform. It details how the system functions as a multi-tenant "nervous system" for organizations.
 
-**Reference:** [[Orgo Overview Presentation](https://administrative-efficienc-0u6vhrh.gamma.site/)](https://administrative-efficienc-0u6vhrh.gamma.site/)
+Distinct from standard ticketing systems or CRMs, Orgo is designed for **sovereignty**. It is capable of operating as a "hermetic bubble"—completely independent of the public internet—powered by local intelligence.
 
+**Reference:** [Orgo Overview Presentation](https://administrative-efficienc-0u6vhrh.gamma.site/)
 -----
 
 ## Conceptual Model
 
 Orgo is designed to solve the "messy signal" problem. Organizations receive inputs from dozens of channels (emails, chats, forms, sensors), often losing context or failing to spot patterns.
 
-Orgo standardizes this flow:
+Orgo standardizes this flow using the **SenTient Engine**:
 
-1.  **Listen:** Ingest signals from any source.
-2.  **Structure:** Convert signals into **Cases** (situations) and **Tasks** (actions).
-3.  **Route:** Assign work using a universal labeling syntax.
-4.  **Track:** Monitor execution against "Reactivity Time" (not just deadlines).
-5.  **Learn:** Feed data into an **Insights** layer for cyclic review and pattern detection.
+1.  **Listen:** Ingest signals from any source (Digital or Analog).
+2.  **Deconstruct (SenTient):** A local, offline engine converts linear natural language into structured **Wikidata concepts** without sending data to external AI clouds.
+3.  **Structure:** Convert these concepts into **Cases** (situations) and **Tasks** (actions).
+4.  **Route:** Assign work using a universal labeling syntax.
+5.  **Track:** Monitor execution against "Reactivity Time" (not just deadlines).
 
 Instead of hard-coding workflows for every department, Orgo provides a shared schema engine. A "Hospital" and a "Basketball Team" run on the same code, differentiated only by their **Profile** configuration.
 
@@ -26,35 +27,45 @@ Instead of hard-coding workflows for every department, Orgo provides a shared sc
 
 The system is strictly multi-tenant.
 
-  * **Organization:** The top-level tenant (e.g., "Acme Corp" or "Local Shelter"). It owns all data, configuration, and policies.
-  * **User:** An authenticated account (staff, volunteer, admin) capable of logging in and performing work.
-  * **Person:** A profile representing a human subject (student, patient, employee). A Person is often the *subject* of a Case but may never log in.
+* **Organization:** The top-level tenant (e.g., "Acme Corp" or "Local Shelter"). It owns all data, configuration, and policies.
+* **User:** An authenticated account (staff, volunteer, admin) capable of logging in and performing work.
+* **Person:** A profile representing a human subject (student, patient, employee). A Person is often the *subject* of a Case but may never log in.
+
+-----
+
+## The Autonomy Standard (The Bubble)
+
+Orgo is built on the philosophy of the **Hermetic Bubble**. While it can bridge to external networks (like Konnaxion) when desired, it does not *rely* on them.
+
+* **Internet Independence:** The core logic, database, and processing engine run entirely on private infrastructure (or local nodes).
+* **Zero Data Leaks:** Because it uses **SenTient** for local processing instead of calling public APIs (like OpenAI or Google), sensitive organizational data never leaves the perimeter.
+* **Resilience:** Operations continue seamlessly during internet blackouts or grid failures.
 
 -----
 
 ## The Workflow Pipeline: Signals → Cases → Tasks
 
-### 1\. Signals
+### 1. Signals
 
 Inputs enter the system via the **Gateway**.
 
-  * **Email:** Parsed via IMAP/SMTP (stripping signatures, normalizing threads).
-  * **API:** Direct POST requests from external tools.
-  * **Offline:** Batched imports from local nodes (supporting the "Offline Bubble" requirement).
+* **Email:** Parsed via IMAP/SMTP (stripping signatures, normalizing threads).
+* **API:** Direct POST requests from external tools.
+* **Offline Node:** Batched imports from local tablets or sensors within the bubble.
 
-### 2\. The Engine
+### 2. The Engine (SenTient + Workflow)
 
-The Workflow Engine evaluates the Signal against **Flow Rules**. It determines:
+The incoming signal is processed by **SenTient** to extract intent and entities, then evaluated by the **Workflow Engine** against **Flow Rules**. It determines:
 
-  * Does this require a new **Case**?
-  * Does this spawn specific **Tasks**?
-  * What is the **Label** (routing address)?
-  * What is the **Severity** and **Reactivity Time**?
+* Does this require a new **Case**?
+* Does this spawn specific **Tasks**?
+* What is the **Label** (routing address)?
+* What is the **Severity** and **Reactivity Time**?
 
-### 3\. Objects
+### 3. Objects
 
-  * **Case:** A container for a specific situation (e.g., "Water Leak in Sector 7" or "Harassment Complaint \#99"). It holds the narrative, location, tags, and aggregate status.
-  * **Task:** An atomic unit of work linked to a Case. It follows a strict state machine (`pending` → `in_progress` → `completed`).
+* **Case:** A container for a specific situation (e.g., "Water Leak in Sector 7" or "Harassment Complaint #99"). It holds the narrative, location, tags, and aggregate status.
+* **Task:** An atomic unit of work linked to a Case. It follows a strict state machine (`pending` → `in_progress` → `completed`).
 
 -----
 
@@ -68,25 +79,25 @@ Orgo uses a deterministic labeling system to route information. A label is a sin
 
 Defines *who* needs to see this.
 
-  * `1` - CEO / Executive
-  * `11` - Department Head
-  * `101` - Team Lead
-  * `1001` - Staff / Operative
-  * *(Broadcast variants: `10`, `100`, `1000`)*
+* `1` - CEO / Executive
+* `11` - Department Head
+* `101` - Team Lead
+* `1001` - Staff / Operative
+* *(Broadcast variants: `10`, `100`, `1000`)*
 
 ### The Taxonomy (Decimal)
 
-  * **Category (1st digit):** The domain (e.g., `9` = Crisis, `5` = Training, `1` = Ops).
-  * **Subcategory (2nd digit):** The intent (e.g., `1` = Request, `4` = Report, `5` = Broadcast).
+* **Category (1st digit):** The domain (e.g., `9` = Crisis, `5` = Training, `1` = Ops).
+* **Subcategory (2nd digit):** The intent (e.g., `1` = Request, `4` = Report, `5` = Broadcast).
 
 ### Example
 
 > **`1001.91.Operations.Safety`**
 >
->   * **1001:** Staff level.
->   * **9:** Crisis/Emergency category.
->   * **1:** Request (Action required).
->   * **Operations.Safety:** The functional team responsible.
+> * **1001:** Staff level.
+> * **9:** Crisis/Emergency category.
+> * **1:** Request (Action required).
+> * **Operations.Safety:** The functional team responsible.
 
 -----
 
@@ -96,16 +107,10 @@ Orgo avoids custom code for every client by using **Profiles**. A Profile is a b
 
 **Configurable Knobs:**
 
-  * **Reactivity Windows:** Does "High Priority" mean 1 hour (Hospital) or 3 days (Volunteer Group)?
-  * **Privacy:** Default visibility (Open-by-default vs. Need-to-know).
-  * **Escalation:** How quickly does an ignored task jump to the next vertical level?
-  * **Retention:** Log storage duration.
-
-**Standard Profiles:**
-
-1.  **Friend Group:** Low automation, high privacy, slow reactivity.
-2.  **Retail Ops:** High automation, open visibility, fast reactivity.
-3.  **Crisis Response:** Maximum reactivity, strict hierarchy, aggressive escalation.
+* **Reactivity Windows:** Does "High Priority" mean 1 hour (Hospital) or 3 days (Volunteer Group)?
+* **Privacy:** Default visibility (Open-by-default vs. Need-to-know).
+* **Escalation:** How quickly does an ignored task jump to the next vertical level?
+* **Retention:** Log storage duration.
 
 -----
 
@@ -113,30 +118,31 @@ Orgo avoids custom code for every client by using **Profiles**. A Profile is a b
 
 The codebase is organized into four distinct layers.
 
-### 1\. Core Services
+### 1. Core Services
 
 The monolithic engine that powers the platform.
 
-  * `TaskHandler`: Enforces state machines and SLA tracking.
-  * `WorkflowEngine`: Matches signals to rules.
-  * `Notifier`: Handles outbound communication (Email, Push).
-  * `Logger`: Centralized, normalized audit logging.
+* **SenTient Integration:** The local NLP module for entity extraction and signal classification.
+* `TaskHandler`: Enforces state machines and SLA tracking.
+* `WorkflowEngine`: Matches signals to rules.
+* `Notifier`: Handles outbound communication (Email, Push).
+* `Logger`: Centralized, normalized audit logging.
 
-### 2\. Domain Modules
+### 2. Domain Modules
 
 Thin adapters that define domain-specific logic without owning separate databases.
 
-  * **Maintenance:** Defines assets, locations, and repair workflows.
-  * **Care/HR:** Defines personnel, privacy rules, and intake flows.
-  * **Groups:** Defines classes, rosters, and schedules.
+* **Maintenance:** Defines assets, locations, and repair workflows.
+* **Care/HR:** Defines personnel, privacy rules, and intake flows.
+* **Groups:** Defines classes, rosters, and schedules.
 
-### 3\. Insights Module
+### 3. Insights Module
 
 The analytical brain. It uses a Star Schema (`fact_cases`, `dim_time`, `dim_location`) to answer questions like "Which department creates the most critical alerts?"
 
-### 4\. Infrastructure
+### 4. Infrastructure
 
-Handles the "plumbing": Database connections (Postgres/SQLite), offline synchronization logic, and Docker containerization.
+Handles the "plumbing": Database connections (Postgres/SQLite), offline synchronization logic, and Docker containerization for independent deployment.
 
 -----
 
@@ -157,7 +163,7 @@ Orgo enforces strict JSON schemas for its primary objects to ensure interoperabi
   "location": { "site": "Main", "area": "Lobby" },
   "metadata": { "incident_type": "slip_fall" }
 }
-```
+````
 
 **The Task Contract (Simplified):**
 
@@ -194,7 +200,8 @@ The engine can be configured to auto-escalate "soft signals." For example: *"If 
 
   * A unified Case & Task routing platform.
   * A pattern detection engine.
-  * A structured communication tool using Wikidata standards for interoperability.
+  * A structured communication tool using Wikidata standards (via SenTient) for interoperability.
+  * A **Hermetic** system capable of total offline autonomy.
 
 **What Orgo is NOT:**
 

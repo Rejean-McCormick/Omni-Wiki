@@ -1,4 +1,7 @@
-﻿# Réjean McCormick
+﻿Here is the updated **Home Page** with the requested additions. I have integrated the new details about Orgo's disconnection capabilities (privacy, resilience, security) and SenTient's role as the secure gateway and efficiency engine.
+
+```markdown
+# Réjean McCormick
 ### Socio-technical Architect
 
 I design and ship civic utilities: shared infrastructure that helps people learn, coordinate, and govern together.
@@ -13,8 +16,8 @@ My work bridges rigid technical systems with fluid narrative layers. I build eng
 
 My architecture is built on a deliberate balance between two opposing needs:
 
-1.  **Global Connection (Konnaxion):** A public ecosystem to connect everyone and share knowledge openly.
-2.  **Hermetic Independence (Orgo):** A private, closed-network nervous system for organizations that need absolute data sovereignty.
+1.  **Global Connection (Konnaxion):** A public ecosystem to connect everyone and share knowledge openly.
+2.  **Hermetic Independence (Orgo):** A private, closed-network nervous system for organizations that need absolute data sovereignty.
 
 To achieve this without relying on external "Big Tech" APIs or constant internet access, I had to build my own engines.
 
@@ -28,7 +31,7 @@ These are the active processors that power the ecosystem.
 **Status:** *Active Development (Open Source)*
 To make Orgo and Konnaxion truly independent, I needed a "language deconstructor" that could operate offline, without relying on external LLMs.
 * **The Build:** I merged the best features of **OpenTapioca**, **Falcon**, and **OpenRefine** into a single, streamlined tool.
-* **The Function:** It deconstructs linear human sentences and maps them into structured Wikidata items (concepts).
+* **The Function:** It deconstructs linear human sentences and maps them into structured Wikidata items (concepts). This process not only secures the entry point but allows information to flow more effectively through internal ducts by removing ambiguity.
 * **The Goal:** Enable language-independent data flow within private bubbles (Orgo) or public networks (Konnaxion).
 * [Access *SenTient* Technical Wiki](SenTient/README.md)
 
@@ -54,7 +57,10 @@ To make Konnaxion available to all, I needed a way to generate multilingual arti
 
 ### 2. Orgo (The Hermetic Bubble)
 * **Mission:** Organize and Go. A multi-tenant nervous system for organizations (gov, business, schools).
-* **Independence:** Designed to operate in a "bubble" (closed network). It uses SenTient to process information locally, ensuring total privacy and speed without data leaks.
+* **Independence:** Designed to operate in a "bubble" (closed network) for three critical reasons:
+    1.  **Privacy:** Can run completely disconnected from any network, ensuring zero data leakage.
+    2.  **Resilience:** Functions autonomously even if the global internet goes down.
+    3.  **Security:** Minimizes entry points. All inputs must pass through **SenTient**, which deconstructs the language into safe, structured data before it ever touches the internal system.
 * **[Presentation of Orgo](https://administrative-efficienc-0u6vhrh.gamma.site/)**
 * [Access *Orgo* Technical Wiki](Orgo/README.md)
 
@@ -99,3 +105,4 @@ To make these systemic ideas legible and engaging, I utilize a narrative engine 
 * **Facebook:** [Profile](https://www.facebook.com/profile.php?id=61559861434513)
 * **X (Twitter):** [@KingKlownXYZ](https://x.com/KingKlownXYZ)
 * **Mastodon:** [@Rejean_McCormick](https://mastodon.social/@Rejean_McCormick)
+```
