@@ -1,0 +1,183 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Omni-Wiki",
+  "theme": "mint",
+  "logo": {
+    "light": "/LogoK.svg",
+    "dark": "/LogoK.svg"
+  },
+  "favicon": "/LogoK.svg",
+  "colors": {
+    "primary": "#1e6864",
+    "light": "#1e6864",
+    "dark": "#daa520"
+  },
+  "topbarLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/Rejean-McCormick/Omni-Wiki"
+    }
+  ],
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Wiki",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": [
+              "index"
+            ]
+          },
+          {
+            "group": "Konnaxion",
+            "pages": [
+              "Konnaxion/README",
+              {
+                "group": "KonnectED (Education)",
+                "pages": [
+                  "Konnaxion/KonnectED/Knowledge",
+                  "Konnaxion/KonnectED/CertifiKation"
+                ]
+              },
+              {
+                "group": "Ethikos (Governance)",
+                "pages": [
+                  "Konnaxion/Ethikos/Korum",
+                  "Konnaxion/Ethikos/Konsultations"
+                ]
+              },
+              {
+                "group": "Kreative (Culture)",
+                "pages": [
+                  "Konnaxion/Kreative/Konservation",
+                  "Konnaxion/Kreative/Kontact"
+                ]
+              },
+              {
+                "group": "keenKonnect (R&D)",
+                "pages": [
+                  "Konnaxion/keenKonnect/Konstruct",
+                  "Konnaxion/keenKonnect/Stockage"
+                ]
+              },
+              {
+                "group": "Kollective Intelligence",
+                "pages": [
+                  "Konnaxion/Kollective-Intelligence/EkoH",
+                  "Konnaxion/Kollective-Intelligence/Smart-Vote"
+                ]
+              },
+              {
+                "group": "Technical",
+                "pages": [
+                  "Konnaxion/Technical/Konnaxion-Technical-Architecture-And-Services"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "SwarmCraft",
+            "pages": [
+              "SwarmCraft/README",
+              {
+                "group": "Core Logic",
+                "pages": [
+                  "SwarmCraft/Core/Architecture-Overview",
+                  "SwarmCraft/Core/Deterministic-Pipeline-Scan-Plan-Execute",
+                  "SwarmCraft/Core/Central-Matrix-Runtime-State"
+                ]
+              },
+              {
+                "group": "Story Scaffold",
+                "pages": [
+                  "SwarmCraft/Scaffold/Story-Scaffold-Templates-Outline-Parts",
+                  "SwarmCraft/Scaffold/Story-Bible-Creative-Intent",
+                  "SwarmCraft/Scaffold/Schema-Templates",
+                  "SwarmCraft/Scaffold/Schema-Outline",
+                  "SwarmCraft/Scaffold/Outline-Grid-CSV-Round-Trip"
+                ]
+              },
+              {
+                "group": "Runtime & Tools",
+                "pages": [
+                  "SwarmCraft/Runtime/Orchestration-Slice-By-Slice-Prompt-Hydration",
+                  "SwarmCraft/Runtime/Multi-Project-Management",
+                  "SwarmCraft/Runtime/RAG-Memory-System",
+                  "SwarmCraft/Runtime/Provider-Adapter-Grok",
+                  "SwarmCraft/Runtime/Dashboard-TUI-Reference"
+                ]
+              },
+              "SwarmCraft/Meta/Credits-And-Lineage"
+            ]
+          },
+          {
+            "group": "Ariane",
+            "pages": [
+              "Ariane/README",
+              {
+                "group": "Atlas (The Map)",
+                "pages": [
+                  "Ariane/Atlas/Atlas",
+                  "Ariane/Atlas/Atlas-Graph-Model",
+                  "Ariane/Atlas/Atlas-Core-Schema",
+                  "Ariane/Atlas/Atlas-Ontology-Vocabulary"
+                ]
+              },
+              {
+                "group": "Theseus (The Explorer)",
+                "pages": [
+                  "Ariane/Theseus/Theseus",
+                  "Ariane/Theseus/Theseus-Drivers",
+                  "Ariane/Theseus/Theseus-Exploration-Engine",
+                  "Ariane/Theseus/Theseus-State-Identification"
+                ]
+              },
+              {
+                "group": "Consumers",
+                "pages": [
+                  "Ariane/Consumers/Consumers",
+                  "Ariane/Consumers/Consumers-AI-Agent-Integration",
+                  "Ariane/Consumers/Consumers-Future-Overlay-Client",
+                  "Ariane/Consumers/Hybrid-Mapping-and-Human-Guided-Assistants"
+                ]
+              },
+              {
+                "group": "Concepts",
+                "pages": [
+                  "Ariane/Concepts/Background-UI-as-Data",
+                  "Ariane/Concepts/Glossary"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Orgo",
+            "pages": [
+              "Orgo/README"
+            ]
+          },
+          {
+            "group": "Âme Artificielle",
+            "pages": [
+              "Ame-Artificielle/README",
+              "Ame-Artificielle/Controle-Et-Personnalisation",
+              "Ame-Artificielle/Creation-De-Chemins",
+              "Ame-Artificielle/Ethique-Et-Gouvernance",
+              "Ame-Artificielle/Meta-Cognition-Et-Resolution",
+              "Ame-Artificielle/Specifications-Fonctionnelles"
+            ]
+          },
+          {
+            "group": "Outils & Code",
+            "pages": [
+              "tools/README",
+              "SenTient/README",
+              "abstract-wiki-architect/README"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
