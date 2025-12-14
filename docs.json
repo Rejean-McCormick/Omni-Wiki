@@ -1,0 +1,105 @@
+{
+  "name": "Omni-Wiki",
+  "logo": {
+    "light": "/logo.png",
+    "dark": "/logo.png"
+  },
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#0D9373",
+    "light": "#07C983",
+    "dark": "#0D9373"
+  },
+  "topbarLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/Rejean-McCormick/Omni-Wiki"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Introduction",
+      "pages": ["README"]
+    },
+    {
+      "group": "Konnaxion (Ecosystème)",
+      "pages": [
+        "Konnaxion/README",
+        "Konnaxion/Konnaxion-Technical-Architecture-And-Services",
+        "Konnaxion/CertifiKation",
+        "Konnaxion/EkoH",
+        "Konnaxion/Knowledge",
+        "Konnaxion/Konservation",
+        "Konnaxion/Konstruct",
+        "Konnaxion/Konsultations",
+        "Konnaxion/Kontact",
+        "Konnaxion/Korum",
+        "Konnaxion/Smart-Vote",
+        "Konnaxion/Stockage"
+      ]
+    },
+    {
+      "group": "Orgo (Indépendance)",
+      "pages": ["Orgo/README"]
+    },
+    {
+      "group": "Ariane (UI & Navigation)",
+      "pages": [
+        "Ariane/README",
+        "Ariane/Background-UI-as-Data",
+        "Ariane/Atlas",
+        "Ariane/Atlas-Graph-Model",
+        "Ariane/Atlas-Core-Schema",
+        "Ariane/Atlas-Ontology-Vocabulary",
+        "Ariane/Theseus",
+        "Ariane/Theseus-Drivers",
+        "Ariane/Theseus-Exploration-Engine",
+        "Ariane/Theseus-State-Identification",
+        "Ariane/Consumers",
+        "Ariane/Consumers-AI-Agent-Integration",
+        "Ariane/Consumers-Future-Overlay-Client",
+        "Ariane/Hybrid-Mapping-and-Human-Guided-Assistants",
+        "Ariane/Glossary"
+      ]
+    },
+    {
+      "group": "SwarmCraft (Orchestration)",
+      "pages": [
+        "SwarmCraft/README",
+        "SwarmCraft/Architecture-Overview",
+        "SwarmCraft/Central-Matrix-Runtime-State",
+        "SwarmCraft/Deterministic-Pipeline-Scan-Plan-Execute",
+        "SwarmCraft/Orchestration-Slice-By-Slice-Prompt-Hydration",
+        "SwarmCraft/RAG-Memory-System",
+        "SwarmCraft/Provider-Adapter-Grok",
+        "SwarmCraft/Schema-Outline",
+        "SwarmCraft/Schema-Templates",
+        "SwarmCraft/Outline-Grid-CSV-Round-Trip",
+        "SwarmCraft/Story-Bible-Creative-Intent",
+        "SwarmCraft/Story-Scaffold-Templates-Outline-Parts",
+        "SwarmCraft/Multi-Project-Management",
+        "SwarmCraft/Dashboard-TUI-Reference",
+        "SwarmCraft/Credits-And-Lineage"
+      ]
+    },
+    {
+      "group": "Ame Artificielle (Alignement)",
+      "pages": [
+        "Ame-Artificielle/README",
+        "Ame-Artificielle/Specifications-Fonctionnelles",
+        "Ame-Artificielle/Ethique-Et-Gouvernance",
+        "Ame-Artificielle/Controle-Et-Personnalisation",
+        "Ame-Artificielle/Creation-De-Chemins",
+        "Ame-Artificielle/Meta-Cognition-Et-Resolution"
+      ]
+    },
+    {
+      "group": "Outils & Moteurs",
+      "pages": [
+        "SenTient/README",
+        "abstract-wiki-architect/README",
+        "tools/README"
+      ]
+    }
+  ]
+}
