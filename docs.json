@@ -26,7 +26,8 @@
           {
             "group": "Introduction",
             "pages": [
-              "index"
+              "index",
+              "Rejean-McCormick-Hub"
             ]
           },
           {
@@ -158,7 +159,7 @@
             ]
           },
           {
-            "group": "\u00c2me Artificielle",
+            "group": "Âme Artificielle",
             "pages": [
               "Ame-Artificielle/Ame-Vision-Hub",
               "Ame-Artificielle/Controle-Et-Personnalisation",
