@@ -20,28 +20,89 @@
   "navigation": [
     {
       "group": "Introduction",
-      "pages": ["README"]
+      "pages": [
+        "README"
+      ]
     },
     {
-      "group": "Modules Principaux",
+      "group": "Konnaxion",
       "pages": [
         "Konnaxion/README",
-        "Orgo/README",
-        "Ariane/README"
+        "Konnaxion/CertifiKation",
+        "Konnaxion/EkoH",
+        "Konnaxion/Knowledge",
+        "Konnaxion/Konnaxion-Technical-Architecture-And-Services",
+        "Konnaxion/Konservation",
+        "Konnaxion/Konstruct",
+        "Konnaxion/Konsultations",
+        "Konnaxion/Kontact",
+        "Konnaxion/Korum",
+        "Konnaxion/Smart-Vote",
+        "Konnaxion/Stockage"
       ]
     },
     {
-      "group": "Recherche & IA",
+      "group": "Orgo",
+      "pages": [
+        "Orgo/README"
+      ]
+    },
+    {
+      "group": "SwarmCraft",
       "pages": [
         "SwarmCraft/README",
-        "Ame-Artificielle/README",
-        "SenTient/README"
+        "SwarmCraft/Architecture-Overview",
+        "SwarmCraft/Central-Matrix-Runtime-State",
+        "SwarmCraft/Credits-And-Lineage",
+        "SwarmCraft/Dashboard-TUI-Reference",
+        "SwarmCraft/Deterministic-Pipeline-Scan-Plan-Execute",
+        "SwarmCraft/Multi-Project-Management",
+        "SwarmCraft/Orchestration-Slice-By-Slice-Prompt-Hydration",
+        "SwarmCraft/Outline-Grid-CSV-Round-Trip",
+        "SwarmCraft/Provider-Adapter-Grok",
+        "SwarmCraft/RAG-Memory-System",
+        "SwarmCraft/Schema-Outline",
+        "SwarmCraft/Schema-Templates",
+        "SwarmCraft/Story-Bible-Creative-Intent",
+        "SwarmCraft/Story-Scaffold-Templates-Outline-Parts"
       ]
     },
     {
-      "group": "Outils",
+      "group": "Âme Artificielle",
+      "pages": [
+        "Ame-Artificielle/README",
+        "Ame-Artificielle/Controle-Et-Personnalisation",
+        "Ame-Artificielle/Creation-De-Chemins",
+        "Ame-Artificielle/Ethique-Et-Gouvernance",
+        "Ame-Artificielle/Meta-Cognition-Et-Resolution",
+        "Ame-Artificielle/Specifications-Fonctionnelles"
+      ]
+    },
+    {
+      "group": "Ariane",
+      "pages": [
+        "Ariane/README",
+        "Ariane/Atlas",
+        "Ariane/Atlas-Graph-Model",
+        "Ariane/Atlas-Core-Schema",
+        "Ariane/Atlas-Ontology-Vocabulary",
+        "Ariane/Background-UI-as-Data",
+        "Ariane/Consumers",
+        "Ariane/Consumers-AI-Agent-Integration",
+        "Ariane/Consumers-Future-Overlay-Client",
+        "Ariane/Glossary",
+        "Ariane/Hybrid-Mapping-and-Human-Guided-Assistants",
+        "Ariane/Theseus",
+        "Ariane/Theseus-Drivers",
+        "Ariane/Theseus-Exploration-Engine",
+        "Ariane/Theseus-State-Identification"
+      ]
+    },
+    {
+      "group": "Outils & Code",
       "pages": [
         "abstract-wiki-architect/README",
+        "SenTient/README",
         "tools/README"
       ]
     }
